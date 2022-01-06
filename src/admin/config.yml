@@ -49,10 +49,6 @@ collections:
               - {label: Title, name: "heading", widget: string}
               - {label: KvK, name: "kvk", widget: number}
               - {label: BTW, name: "btw", widget: string}
-        
-            
-                
-        
       - label: "Socials"
         name: "socials"
         file: "src/_data/contact/socials.json"
@@ -61,3 +57,24 @@ collections:
           - {label: Instagram URL, name: instagram, widget: string}
           - {label: Facebook URL, name: facebook, widget: string}
           - {label: LinkedIN URL, name: linkedin, widget: string}
+          - {label: Twitter URL, name: twitter, widget: string}
+          - {label: Youtube URL, name: youtube, widget: string}
+             
+  - label: "About Page"
+    name: "about"
+    preview_path: "https://activecollective-netlify.netlify.app/about/"
+    files:
+      - label: "Values"
+        name: "list"
+        file: "src/_data/about/values.json"
+        fields:
+          - label: "Values"
+            name: "list"
+            widget: "list"
+            create: true
+            collapsed: false
+            fields:
+              - {label: ID, name: "id", widget: "hidden"}
+              - {label: Title, name: "title", widget: string}
+              - {label: Description, name: "description", widget: string}
+  
