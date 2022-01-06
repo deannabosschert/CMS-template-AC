@@ -4,13 +4,13 @@
   "description": "Redesigned website for Active Collective.",
   "scripts": {
     "predev": "rimraf _site",
-    "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
+    "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,md,ejs,gif,jpg,png,css --serve --port=3000",
     "dev:css": "sass --watch assets/css:_site/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy",
     "prebuild": "rimraf _site",
     "build": "cross-env ELEVENTY_ENV=production run-s build:*",
-    "build:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
+    "build:eleventy": "npx @11ty/eleventy --formats=html,njk,mdejs,gif,jpg,png,css --serve --port=3000",
     "build:css": "sass --watch assets/css:_site/"
     },
   "repository": {
