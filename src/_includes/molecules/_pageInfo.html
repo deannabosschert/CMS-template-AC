@@ -1,0 +1,25 @@
+{% if client or website %}
+<aside class="c-page-info">
+  {% if client %}
+  <article class="page-info__article">
+    <h3 class="page-info__article__heading">Client</h3>
+    <p class="page-info__article__text">{{ client }}</p>
+  </article>
+  {% endif %}
+  {% if website %}
+  <article class="page-info__article">
+    <h3 class="page-info__article__heading">Website</h3>
+    <a class="page-info__article__link" href="{{ website }}" target="_blank" rel="noreferrer noopener">{{ website }}</a>
+  </article>
+</aside>
+{% endif %}
+{% endif %}
+{% if auteur or minutesRead %}
+<aside class="c-page-info">
+  <article class="page-info__article">
+    <h3 class="page-info__article__heading">Auteur</h3>
+    <p class="page-info__article__text">{{ auteur }}</p>
+    <p class="page-info__article__minutes">{{ minutesRead }} min read</p>
+  </article>
+</aside>
+{% endif %}

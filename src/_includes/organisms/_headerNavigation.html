@@ -1,0 +1,35 @@
+<nav class="c-header-nav">
+  {% if logoColor %}
+  <a href="/" class="header-nav__logo u-text-invisible"><img class="header-nav__logo__img"
+      src="http://acceptatie.activecollective.nl/assets/img/logos/active-collective_logo_{{logoColor}}.svg"
+      alt="logo of Active Collective in {{logoColor}} letters" width="199" height="19">Home: Active Collective</a>
+  {% else %}
+  <a href="/" class="header-nav__logo u-text-invisible "><img class="header-nav__logo__img"
+      src="http://acceptatie.activecollective.nl/assets/img/logos/active-collective_logo_black.svg"
+      alt="logo of Active Collective in black letters" width="199" height="19">Home: Active Collective</a>
+  {% if logoColorSwitch %}
+  <a href="/" class="header-nav__logoColorSwitch u-text-invisible" aria-hidden="true"><img
+      class="header-nav__logoColorSwitch__img" aria-hidden="true"
+      src="http://acceptatie.activecollective.nl/assets/img/logos/active-collective_logo_white.svg"
+      alt="logo of Active Collective in white letters" width="199" height="19">Home: Active Collective</a>
+  {% endif %}
+  {% endif %}
+  <input class="header-nav__button menu-btn" type="checkbox" id="menu-btn" />
+  <label class="header-nav__menu-icon menu-icon" for="menu-btn"><span
+      class="header-nav__menu-icon__stripes navicon"></span></label>
+  <ul class="header-nav__menu menu">
+    <li class="header-nav__menu__listItem"><a href="/services/"
+        class="header-nav__menu__listItem__link services">Services</a></li>
+    <li class="header-nav__menu__listItem"><a href="/industries/"
+        class="header-nav__menu__listItem__link industries">Industries</a></li>
+    <li class="header-nav__menu__listItem"><a href="/cases/"
+        class="header-nav__menu__listItem__link cases">Cases</a></li>
+    <li class="header-nav__menu__listItem"><a href="/about/"
+        class="header-nav__menu__listItem__link about">About us</a></li>
+    <li class="header-nav__menu__listItem"><a href="/careers/"
+        class="header-nav__menu__listItem__link careers">Careers</a></li>
+    <li class="header-nav__menu__listItem"><a href="/contact/"
+        class="header-nav__menu__listItem__link contact">Contact</a></li>
+  </ul>
+</nav>
+</nav>

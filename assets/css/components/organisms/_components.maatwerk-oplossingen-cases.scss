@@ -1,0 +1,206 @@
+.c-maatwerk-oplossingen-cases {
+  background-color: $color-black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  max-width: 1075px;
+
+  // padding: 6rem 12.5% 6rem;
+  // margin-bottom: 4rem;
+  .maatwerk-oplossingen-cases__heading {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .maatwerk-oplossingen-cases__text {
+    // min-width: 80%;
+    max-width: 100%;
+
+    &:last-of-type {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+ 
+}
+
+// TYPOGRAPHY 
+.c-maatwerk-oplossingen-cases {
+  a {
+    &::after {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// page-specific
+.Nieuws {
+  .c-maatwerk-oplossingen-cases {
+    article:first-child {
+
+      h3,
+      a {
+        color: $color-white;
+      }
+    }
+
+    h3,
+    a {
+      color: $color-grey-1;
+    }
+  }
+}
+
+.Nieuws {
+  .c-maatwerk-oplossingen-cases {
+    background-color: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    article:first-child {
+      img {
+        filter: brightness(60%)
+      }
+    }
+
+    header {
+      bottom: 2rem;
+      max-width: 100%;
+    }
+
+    p {
+      order: 1;
+    }
+
+    h3 {
+      order: 2;
+    }
+
+    a {
+      order: 3;
+    }
+  }
+}
+
+.Cases,
+.Nieuws {
+  .c-maatwerk-oplossingen-cases {
+    background-color: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .maatwerk-oplossingen-cases__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+
+.c-case-card {
+  &:nth-child(4) {
+    padding-right: 0.625rem;
+  }
+
+  &:nth-child(5) {
+    padding-left: 0.625rem;
+  }
+}
+}
+
+@media screen and (max-width: 696px) {
+
+.c-case-card {
+  min-width: 100%;
+  padding: 0;
+  // margin-bottom: 2rem;
+
+  header {
+    h3 {
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+
+  img {
+    height: auto;
+  }
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .c-maatwerk-oplossingen-cases {
+
+    // padding: 4rem 12.5% 2rem;
+    
+
+    h2 {
+      font-size: 26px;
+      line-height: 32px;
+      max-width: 95%;
+    }
+
+    >p {
+      max-width: 100%;
+    }
+
+    .cases-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      header {
+        max-width: 95%;
+
+        h3 {
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 27px;
+        }
+      }
+
+      img {
+        /* margin-bottom: 1rem; */
+      }
+
+      article {
+        margin-bottom: 2.75rem;
+
+        &:first-child {
+          margin-bottom: 0;
+          padding-bottom: 1.5rem;
+
+          header,
+          a {
+            max-width: 80%;
+            left: 1.5rem;
+          }
+
+          header {
+            // bottom: 5rem;
+          }
+
+          a {
+            line-height: 22px;
+            // bottom: 3rem;
+          }
+
+          img {
+            // filter: opacity(0.5);
+            filter: brightness(0.7)
+          }
+        }
+      }
+    }
+
+
+  }
+}

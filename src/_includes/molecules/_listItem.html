@@ -1,0 +1,18 @@
+<article class="c-listItem">
+    {% if content.id %}
+    <h3 class="listItem__heading"><span class="listItem__heading__id">{{ content.id }}</span>{{ content.title }}</h3>
+    {% else %}
+    <h3 class="listItem__heading">{{ content.title }}</h3>
+    {% endif%}
+  
+    <p class="listItem__description">{{ content.description }}</p>
+    {% include "atoms/_listHeader.html" %}
+    {% if content.listItems %}
+    <ul class="listItem__list">
+      {% for listItem in content.listItems %}
+      <li class="listItem__list__listItem">{{ listItem }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% include "atoms/_callToAction.html" %}
+  </article>

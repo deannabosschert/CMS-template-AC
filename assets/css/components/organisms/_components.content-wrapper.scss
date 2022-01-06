@@ -1,0 +1,266 @@
+.c-content, .industry-content {
+  font-size: 18px;
+  line-height: 26px;
+  // min-width: 100%;
+  width: 100%;
+  max-width: 1075px;
+  
+
+  // }
+  // page-specific
+  // .Industries .detailPage .content h3 {
+  h3 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+.content  {
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+  max-width: 1075px;
+}
+.casePage .content {
+  max-width: 800px;
+}
+
+.content__quote {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.content__quote__text {
+  color: #313131;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+}
+
+.casePage .content p {
+  color: $color-white;
+}
+
+.c-page-contentVideo {
+  max-width: 709px;
+  height: auto;
+  margin-bottom: 64px;
+}
+
+.c-page-contentimage {
+  margin: 64px 0;
+}
+
+.Nieuwsartikel .content {
+  h2 {
+    font-size: 34px;
+    line-height: 42px;
+    color: $color-grey-1;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    color: $color-grey-2;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-grey-1;
+  }
+}
+
+.Careers {
+  .c-content {
+    min-width: 100%;
+    width: 100%;
+    max-width: 709px;
+    // margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__text,
+  .content__quote {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+  }
+
+ 
+}
+.content__quote {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+.content__text {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.content__quote__text {
+  position: relative;
+  color: $color-grey-1;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+}
+
+.content__quote__text__mark {
+  font-weight: 500;
+  font-size: 120px;
+  vertical-align: bottom;
+  line-height: 0px;
+  padding-right: 0.6rem;
+}
+
+.Nieuwsartikel {
+  .content {
+    width: 100%;
+    max-width: 709px;
+    margin-bottom: 2rem;
+
+    img {
+      margin-bottom: 3.5rem;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    h2,
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+
+.detailPage {
+  
+
+  .content {
+    max-width: 800px;
+    margin-bottom: 1rem;
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      max-width: 90%;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      width: 90%;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      margin-bottom: 3.5rem;
+    }
+  }}
+
+@media screen and (max-width: 600px) {
+  .Contact {
+    .contact-wrapper {
+      margin-bottom: 0;
+
+      >img {
+        order: 1;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .Careers .c-content {
+    margin-top: 5rem;
+  }
+
+  .content {
+    max-width: 100%;
+
+    h2 {
+      font-size: 28px;
+      line-height: 36px
+    }
+
+    img {
+      object-fit: cover;
+      height: fit-content;
+    }
+  }
+
+  .content__quote__text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .content__quote__text__mark {
+    font-weight: 500;
+    font-size: 120px;
+    vertical-align: bottom;
+    line-height: 0px;
+    padding-right: 0.6rem;
+  }
+
+  .detailPage .content {
+    max-width: 100%;
+
+    h2 {
+      max-width: 97.5%;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .casePage {
+    .content {
+      width: 800px;
+      margin-bottom: 2rem;
+      max-width: 100%;
+
+      article {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        width: 100%;
+        max-width: 100%;
+        /* padding: 0 2rem; */
+        margin-bottom: 1.5rem;
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+}
+
+
+.industry-content {
+  max-width: 618px;
+}

@@ -1,0 +1,20 @@
+---
+layout: templates/_detailPage.html
+title: 'Cases'
+pageName: 'Cases'
+breadcrumbs: [{ name: "Home", link: "/" }, { name: "Cases", link: "/cases/"}]
+pageHeaderStripe: 'add'
+pageTitle: 'Cases'
+pageTitleMobile: 'Cases'
+pageDescription: 'Samen werken aan een betere, slimmere toekomst door middel van design.'
+pageDescriptionMobile: 'Samen werken aan een betere, slimmere toekomst door middel van design.'
+
+---
+<section class="c-maatwerk-oplossingen-cases">
+  <h2 class="u-text-invisible">Cases</h2>
+  <div class="c-cases-wrapper cases-wrapper">
+    {% for case in showCases %}
+    {% include "molecules/_caseCard.html" %}
+    {% endfor %}
+  </div>
+</section>

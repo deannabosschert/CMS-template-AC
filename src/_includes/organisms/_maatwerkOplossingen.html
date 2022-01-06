@@ -1,0 +1,12 @@
+<div class="maatwerkCasesBackground">
+  <section class="c-maatwerk-oplossingen-cases">
+    <h2 class="maatwerk-oplossingen-cases__heading">Maatwerk-oplossingen voor complexe problemen</h2>
+    <p class="maatwerk-oplossingen-cases__text">Maatwerk-oplossingen die naadloos aansluiten op de strategie en visie
+      van onze klanten.</p>
+    <p class="maatwerk-oplossingen-cases__text">In co-creatie ontwikkelen we een schaalbare oplossing die past bij de
+      organisatie.</p>
+    {% for case in maatwerkOplossingenCases %}
+    {% include "molecules/_caseCard.html" %}
+    {% endfor %}
+  </section>
+</div>

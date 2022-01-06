@@ -1,0 +1,20 @@
+<header class="c-page-header">
+  {% include "molecules/_breadcrumbs.html" %}
+  {% include "atoms/_pageHeaderStripe.html" %}
+  {% if pageTitle %}
+  <h1 class="page-header__title title--desktop">{{ pageTitle }}</h1>
+  {% endif %}
+  {% if pageTitleMobile %}
+  <h1 class="page-header__title title--mobile" aria-hidden="true">{{ pageTitleMobile }}</h1>
+  {% endif %}
+  <div class="page-header__info">
+    {% if pageDescription %}
+    <p class="page-header__info__description description--desktop">{{ pageDescription }}</p>
+    {% endif %}
+    {% if pageDescriptionMobile %}
+    <p class="page-header__info__description description--mobile" aria-hidden="true">{{ pageDescriptionMobile }}</p>
+    {% endif %}
+    {% include "atoms/_pageCallToAction.html" %}
+    {% include "molecules/_pageInfo.html" %}
+  </div>
+</header>

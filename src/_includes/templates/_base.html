@@ -1,0 +1,26 @@
+---
+showArticles: ['digitalisering', 'healthcare', 'warschau']
+showArticleNav: ['Life Sciences & Health Care', 'Energy, Resources & Industrials', 'Consumer']
+showCases: ['projectPicture', 'willAndCo', 'lidlNL']
+maatwerkOplossingenCases: ['lidlNL', 'willAndCo']
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "sections/_head.html" %}
+</head>
+
+<body class="{{homePaginaNaam}}">
+  <!-- <div class="testwidth">
+    <div class="testwidthinner">
+    </div>
+  </div> -->
+  {% include "sections/_header.html" %}
+  <main class="{{pageName}}  {{pageType}}">
+    {{ content | safe }}
+  </main>
+  {% include "sections/_footer.html" %}
+</body>
+
+</html>

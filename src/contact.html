@@ -1,0 +1,62 @@
+---
+layout: templates/_contact.html
+title: Contact
+breadcrumbs: [{ name: "Home", link: "/" }, { name: "Contact", link: "/contact/"}]
+pageHeaderStripe: 'add'
+pageName: 'Contact'
+pageTitle: 'Contact'
+pageTitleMobile: 'Contact'
+pageDescription: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit
+doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
+pageDescriptionMobile: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen.
+Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
+---
+<h2 class="u-text-invisible">Contactinformatie</h2>
+<div class="contact-wrapper">
+  <section class="contact-wrapper__info c-lists">
+    {% for contactInfo in pageContents.Contact %}
+    <article class="c-listItem">
+      <h3 class="listItem__heading">{{ contactInfo.title }}</h3>
+      <address class="listItem__address">
+        {{ contactInfo.address | safe }}
+        {% if contactInfo.telephone %}
+        <a class="listItem__address__link" href="tel:{{contactInfo.telephone | trim}}">{{ contactInfo.telephone }}</a>
+        {% endif %}
+        {% if contactInfo.email %}
+        <a class="listItem__address__link" href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a>
+        {% elseif contactInfo.jobsEmail %}
+        <a class="listItem__address__link" href="mailto:{{contactInfo.jobsEmail}}">{{contactInfo.jobsEmail}}</a>
+        {% endif %}
+        {% if contactInfo.kvk %}
+        <p class="listItem__address__text">KVK: {{contactInfo.kvk}}</p>
+        <p class="listItem__address__text">BTW: {{contactInfo.btw}}</p>
+        {% endif %}
+        {% if contactInfo.instagram or contactInfo.facebook or contactInfo.linkedin %}
+        <div class="social-media-icons">
+          {% if contactInfo.instagram  %}
+          <a href="{{contactInfo.instagram}}" target="_blank" rel="noopener">
+            <img src="http://acceptatie.activecollective.nl/assets/img/logos/Instagram.png" alt="logo of Instagram"
+              width="21" height="21">
+          </a>
+          {% endif %}
+          {% if contactInfo.facebook  %}
+          <a href="{{contactInfo.facebook}}" target="_blank" rel="noopener">
+            <img src="http://acceptatie.activecollective.nl/assets/img/logos/Facebook.png" alt="logo of Facebook"
+              width="21" height="21">
+          </a>
+          {% endif %}
+          {% if contactInfo.linkedin  %}
+          <a href="{{contactInfo.linkedin}}" target="_blank" rel="noopener">
+            <img src="http://acceptatie.activecollective.nl/assets/img/logos/LinkedIn.png" alt="logo of LinkedIn"
+              width="21" height="21">
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </address>
+    </article>
+    {% endfor %}
+  </section>
+  <img class="contact-wrapper__img" src="http://acceptatie.activecollective.nl/assets/img/{{images.team.jesper.src}}.jpg"
+    alt="{{images.team.jesper.alt}}" width="{{images.team.jesper.width}}">
+</div>

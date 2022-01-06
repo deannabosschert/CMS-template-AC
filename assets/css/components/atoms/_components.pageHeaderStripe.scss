@@ -1,0 +1,15 @@
+.c-page-header-stripe {
+  border-bottom: 7px solid $color-black;
+  width: 4.25rem;
+  margin-bottom: 1rem;
+}
+
+.Home .c-page-header-stripe {
+  border-bottom: 7px solid $color-white;
+}
+
+@media screen and (max-width: 600px) {
+  .Careers .c-page-header-stripe {
+    border-bottom: 7px solid white;
+  }
+}

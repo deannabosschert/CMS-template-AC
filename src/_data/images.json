@@ -1,0 +1,189 @@
+{
+  "Services": {
+    "contentImage": {
+      "src": "team/jesper_rectangle",
+      "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations ",
+      "width": "528",
+      "height": "289"
+    }
+  },
+  "Industries": {
+    "coverImage": {
+      "src": "team/team_meeting",
+      "alt": "photograph of 6 colleagues from different disciplines like security, design, development and project management and such in a meeting room together, working on their macbooks and discussing something ",
+      "width": "1256",
+      "height": "502"
+    },
+    "contentImage": {
+      "src": "team/jesper_rectangle",
+      "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations ",
+      "width": "528",
+      "height": "289"
+    }
+  },
+  "Careers": {
+    "coverImage": {
+        "src": "team/team_meeting_clients",
+        "alt": "photograph of the Active Collective team in a meeting with a client",
+        "width": "1441",
+        "height": "502"
+    },
+    "contentVideo": {
+      "src": "case_images/projectPicture",
+      "alt": "video of Ingeborg talking about Project Picture",
+      "width": "709",
+      "height": "401"
+    }
+  },
+  "team": {
+    "meeting": {
+      "src": "team/team_meeting",
+      "alt": "photograph of 6 colleagues from different disciplines like security, design, development and project management and such in a meeting room together, working on their macbooks and discussing something ",
+      "width": "1256",
+      "height": "502"
+    },
+    "meeting_clients": {
+      "src": "team/team_meeting_clients",
+      "alt": "photograph of the Active Collective team in a meeting with a client",
+      "width": "1441",
+      "height": "502"
+    },
+    "jesper": {
+      "src": "team/jesper_rectangle",
+      "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations",
+      "width": "528",
+      "height": "289"
+    },
+    "raymond": {
+      "src": "team/raymond",
+      "alt": "photograph of founder Raymond Martens",
+      "width": "347",
+      "height": "336"
+    },
+    "portraits": [{
+        "name": "Jesper",
+        "imgAlt": "has a beard, wears glasses and a brown jumper with white stripes and is posing with his arms crossed"
+      },
+      {
+        "name": "Jorrit",
+        "imgAlt": "wears a cotton-flannel mixed shirt and is posing with his arms crossed"
+      },
+      {
+        "name": "Britt",
+        "imgAlt": "wears a black beret hat and black turtleneck with gold jewellery and is posing with her arms crossed"
+      },
+      {
+        "name": "Bas",
+        "imgAlt": "wears a dark blue shirt, has a toy NERF-gun in his hand and is posing by pointing it at the camera"
+      }
+    ]
+  },
+  "lidlNL": {
+    "coverImage": {
+      "src": "case_images/lidlNL",
+      "alt": "photograph of lidl employees posing for the picture, smiling and looking happy",
+      "width": "1259",
+      "height": "504"
+    },
+    "contentImage": {
+      "src": "case_images/lidlNL_content",
+      "alt": "screenshot showing a few very positive articles about Lidl as an employer, such as Lidl receiving the 'Top Employer 2018'-award and an interview with an employee about his growth at Lidl",
+      "width": "709",
+      "height": "401"
+    }
+  },
+  "projectPicture": {
+    "coverImage": {
+      "src": "case_images/projectPicture",
+      "alt": "photograph of Project Picture on a computer screen",
+      "width": "1259",
+      "height": "502"
+    },
+    "contentVideo": {
+      "src": "case_images/projectPicture",
+      "alt": "video of Ingeborg talking about Project Picture",
+      "width": "709",
+      "height": "401"
+    }
+  },
+  "willAndCo": {
+    "coverImage": {
+      "src": "case_images/willAndCo",
+      "alt": "four photographs grouped together of Will and Co, capturing the ambience of meetings, conferences and team building trips",
+      "width": "1259",
+      "height": "502"
+    },
+    "contentImage": {
+      "src": "case_images/willAndCo_content",
+      "alt": "screen capture of the Will&Co style guide",
+      "width": "709",
+      "height": "401"
+    }
+  },
+  "digitalisering": {
+    "coverImage": {
+      "src": "article_images/digitalisering",
+      "alt": "graph illustrating the potentials of digitalizing health care",
+      "width": "1259",
+      "height": "502"
+    },
+    "contentImage": {
+      "src": "article_images/digitalisering_content",
+      "alt": "photograph taken during a pitch or presentation",
+      "width": "709",
+      "height": "401"
+    }
+  },
+  "healthcare": {
+    "coverImage": {
+      "src": "article_images/scan",
+      "alt": "photo of a medical device",
+      "width": "1259",
+      "height": "502"
+    },
+    "contentImage": {
+      "src": "article_images/scan",
+      "alt": "photo of a medical device",
+      "width": "709",
+      "height": "401"
+    }
+  },
+  "warschau": {
+    "coverImage": {
+      "src": "article_images/warschau",
+      "alt": "long exposure photograph of the city of Warsaw in the evening",
+      "width": "1259",
+      "height": "502"
+    },
+    "contentImage": {
+      "src": "article_images/warschau_content",
+      "alt": "photograph taken on the Warsaw trip in which the whole group is sitting at a large restaurant table looking at the menu's for dinner",
+      "width": "707.64",
+      "height": "300"
+    }
+  },
+  "lifeSciencesAndHealthcare": {
+    "coverImage": {
+      "src": "case_images/projectPicture",
+      "alt": "photograph of Project Picture on a computer screen",
+      "width": "1259",
+      "height": "502"
+    }
+  },
+  "energyResourcesIndustrials": {
+    "coverImage": {
+      "src": "",
+      "alt": "cover image for this industry, [insert alt text]",
+      "width": "1259",
+      "height": "502"
+    }
+  },
+  "Consumer": {
+    "coverImage": {
+      "src": "case_images/projectPicture",
+      "alt": "cover image for this industry, [insert alt text]",
+      "width": "1259",
+      "height": "502"
+    }
+  }
+}

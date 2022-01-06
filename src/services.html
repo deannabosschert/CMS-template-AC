@@ -1,0 +1,20 @@
+---
+layout: templates/_detailPage.html
+title: Services
+breadcrumbs: [{ name: "Home", link: "/" }, { name: "Services", link: "/services/"}]
+pageHeaderStripe: 'add'
+pageName: 'Services'
+pageTitle: 'Wij helpen bedrijven innoveren door middel van data, design en vakmanschap'
+pageTitleMobile: 'Wij helpen bedrijven innoveren door data en vakmanschap'
+pageDescription: 'Active Collective creeërt maatschappelijke en wetenschappelijke vooruitgang via vernieuwende technologie. Wij werken niet op basis van ons gevoel, maar op basis van feitelijke data. Met de juiste professionals op de juiste plek helpen wij jou met jouw digitale vraagstukken!'
+pageDescriptionMobile: 'Wij creëren maatschappelijke vooruitgang via vernieuwende technologie.'
+pageCallToAction: {
+    text: "Neem contact met ons op",
+    link: "/contact/"}
+
+---
+<section class="c-lists">
+    {% include "organisms/_lists.html" %}
+    {% include "atoms/_pageContentImage.html" %}
+</section>
+{% include "organisms/_maatwerkOplossingen.html" %}

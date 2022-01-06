@@ -1,0 +1,32 @@
+{
+    "digitalisering": {
+      "title": "Waarom digitalisering binnen bedrijven zo belangrijk is",
+      "tag": "Life sciences & Health care",
+      "img": {
+        "src": "article_images/digitalisering_rectangle",
+        "alt": "graph illustrating the potentials of digitalizing health care"
+      },
+      "link": "/nieuws/digitalisering"
+    },
+    "healthcare": {
+      "title": "Innovation in Healthcare: how can AI improve healthcare",
+      "tag": "Life sciences & Health care",
+      "img": {
+        "src": "article_images/scan_rectangle",
+        "alt": "photo of a medical device"
+      },
+      "link": "/nieuws/healthcare"
+    },
+    "ERI": {
+      "tag": "Energy, Resources & Industrials"
+    },
+    "warschau": {
+      "title": "Warschau toont zijn ware kracht en innovatie",
+      "tag": "Consumer",
+      "img": {
+        "src": "article_images/warschau_rectangle",
+        "alt": "long exposure photograph of the city of Warsaw in the evening"
+      },
+      "link": "/nieuws/warschau"
+    }
+  }

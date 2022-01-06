@@ -1,0 +1,11 @@
+  <section class="c-articles">
+    {% if otherArticles %}
+      {% for article in otherArticles %}
+      {% include "molecules/_article.html" %}
+      {% endfor %}
+    {% else %}
+      {% for article in showArticles %}
+      {% include "molecules/_article.html" %}
+      {% endfor %}
+    {% endif %}
+  </section>

@@ -1,0 +1,185 @@
+/* ========================================================================== */
+/* ELEMENTS- PAGE */
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=3181090a-d079-4308-81c4-a26d856b022e");
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("http://acceptatie.activecollective.nl/assets/fonts/f9c5199e-a996-4c08-9042-1eb845bb7495.woff2") format("woff2"), url("http://acceptatie.activecollective.nl/assets/fonts/2a34f1f8-d701-4949-b12d-133c1c2636eb.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("http://acceptatie.activecollective.nl/assets/fonts/08b57253-2e0d-4c12-9c57-107f6c67bc49.woff2") format("woff2"), url("http://acceptatie.activecollective.nl/assets/fonts/08edde9d-c27b-4731-a27f-d6cd9b01cd06.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("http://acceptatie.activecollective.nl/assets/fonts/240c57a0-fdce-440d-9ce3-85e0cb56f470.woff2") format("woff2"), url("http://acceptatie.activecollective.nl/assets/fonts/7802e576-2ffa-4f22-a409-534355fbea79.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("http://acceptatie.activecollective.nl/assets/fonts/800da3b0-675f-465f-892d-d76cecbdd5b1.woff2") format("woff2"), url("http://acceptatie.activecollective.nl/assets/fonts/7b415a05-784a-4a4c-8c94-67e9288312f5.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+html {
+  font-size: ($inuit-global-font-size / 16px) * 1em;
+  /* [1] */
+  line-height: $inuit-global-line-height / $inuit-global-font-size;
+  /* [1] */
+  /* overflow: auto; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* [2] */
+  min-height: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  /* [3] */
+  font-family: Helvetica Neue, Helvetica, Arial, "Lucida Grande", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica Neue;
+  // background-color: #E5E5E5;
+  color: $color-body-grey;
+  word-break: normal;
+  position: relative;
+}
+
+.testwidth {
+  position: absolute;
+  width: 100%;
+  max-width: 1075px;
+  background-color: rgba(173, 216, 230, 0.5);
+  height: 100%;
+  padding: 28px;
+  z-index: -1;
+
+  .testwidthinner {
+    background-color: rgba(255, 182, 193, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+
+.About {
+  .backgroundColorBlack {
+    min-width: 100vw;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    background-color: $color-black;
+    padding-top: calc(269px - 80px);
+    margin-top: calc(-269px + 80px);
+    margin-bottom: 128px;
+  }
+}
+
+.blackBackgroundOtherArticles {
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-content: center;
+  align-items: center;
+  background-color: $color-black;
+  margin-bottom: 128px;
+  padding: 128px 0;
+}
+
+.maatwerkCasesBackground,
+.blackBackground-wrapper {
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-content: center;
+  align-items: center;
+  background-color: $color-black;
+  margin-bottom: 128px;
+  padding: 128px 28px 92px 28px;
+}
+
+.casePage .blackBackground-wrapper {
+  margin-top: calc(-128px + -128px);
+  padding-top: calc(128px + 128px + 128px);
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+body>header,
+main {
+  // padding: 0 10%;
+}
+
+
+
+@media screen and (max-width: 1103px) {
+
+  body>header,
+  main,
+  footer {
+    padding: 0 28px;
+  }
+
+  .backgroundColorBlack,
+  .blackBackgroundOtherArticles,
+  .blackBackground-wrapper {
+    padding: 128px 28px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .backgroundColorBlack,
+  .blackBackgroundOtherArticles,
+  .blackBackground-wrapper, .maatwerkCasesBackground {
+    padding: 64px 28px;
+  }
+}
+
+// body a, body button {
+//   min-width: 48px;
+//   min-height: 48px;
+// }
+@media screen and (max-width: 856px) {
+
+  .blackBackground-wrapper {
+    padding: 64px 28px;
+    margin-bottom: 80px;
+  }
+}

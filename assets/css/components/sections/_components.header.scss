@@ -1,0 +1,138 @@
+.c-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5% 0 0 0;
+  width: 100%;
+}
+
+.c-hero-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-black;
+  background-image: url("/assets/img/case_images/projectPicture_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  width: 100vw;
+  // height: 31rem;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-top: 2.5%;
+  margin-bottom: 4rem;
+}
+
+.hero-header__content {
+  width: 100%;
+  max-width: 1075px;
+}
+
+.hero-header__content__header {
+  // margin-top: 3rem;
+}
+
+.hero-header__content__header__heading {
+  color: $color-white;
+
+  margin-bottom: 1.5rem;
+  max-width: 50rem;
+}
+
+.hero-header__content__header__text {
+  max-width: 48rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-header__content__link {
+  min-width: 100%;
+}
+
+// TYPOGRAPHY
+
+
+.hero-header__content__header__text {
+  color: $color-white;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+}
+
+.hero-header__content__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  &::after {
+    content: "⭢";
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-left: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-header {
+    margin: 6.5% 0 2rem 0;
+  }
+
+  .c-hero-header {
+    background-position: top;
+  }
+}
+
+
+
+.Home main {
+  // overflow: visible;
+  margin-top: 569px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .c-header {
+    margin-bottom: 0;
+  }
+  .Home main {
+    margin-top: 505px;
+    margin-top: calc(569px - 64px);
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .Home main .c-hero-header {
+    height: auto;
+  }
+  .Home main {
+    margin-top: 665px;
+    margin-top: calc(569px + 64px + 32px);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 677px) {
+ .Home main .c-hero-header {
+   height: inherit;
+  padding-bottom: 81px;
+}
+  .Home main {
+    margin-top: 633px;
+    margin-top: calc(569px + 64px);
+  }
+}
+
+.Home .c-hero-header {
+  z-index: -1;
+  // padding-top: calc(203px + 123px);
+  // margin-top: -203px;
+  padding: 203px 28px 80px 28px;
+  // margin-top: -80px;
+  height: 569px;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+}

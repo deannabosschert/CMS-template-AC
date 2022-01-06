@@ -1,0 +1,187 @@
+{
+  "Services": [{
+      "title": "Development",
+      "description": "De juiste technologie voor de juiste context. Wij bouwen samen met jullie een product gericht op de toekomst.",
+      "listItems": [
+        "Software Engineering",
+        "Proven Technology",
+        "Web Application",
+        "Online Platforms",
+        "Apps"
+      ]
+    },
+    {
+      "title": "Design",
+      "description": "Van idee naar ontwerp, van schets naar interactief prototype. Wij vertalen de gebruikersbehoeften naar een gefundeerde digitale experience.",
+      "listItems": [
+        "Service Design",
+        "Design Systems",
+        "Product Design",
+        "User Research",
+        "Design Sprints"
+      ]
+    },
+    {
+      "title": "Research",
+      "description": "Zonder gedegen onderzoek, geen eindproduct. Een samenhang van onderzoek, data en een goed oog voor gebruiksvriendelijkheid.",
+      "listItems": [
+        "Data Science (Advisory)",
+        "Benchmark & Competitor Analysis",
+        "Market Research",
+        "UX Research",
+        "User- en Employee Journeys"
+      ]
+    },
+    {
+      "title": "Security & Privacy",
+      "description": "We doen het veilig of je doen het niet. Maar dat kan ook niet anders als ISO gecertificeerde agency.",
+      "listItems": [
+        "Encryption Advisory",
+        "Pen Testing",
+        "Laws & Regulations(ISO27001)",
+        "GDPR Advisory"
+      ]
+    }
+  ],
+  "Industries": [{
+      "title": "Life Sciences & Health Care",
+      "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
+      "listItems": [
+        "Automatic tumor segmentation tool",
+        "Visual patient data analytics software",
+        "Online patient collaboration portal",
+        "MRI Data visualisation",
+        "Computational biology for oncology"
+      ],
+      "callToAction": {
+        "text": "meer over Life Sciences & Health Care",
+        "link": "/industries/lifesciencesandhealthcare"
+      }
+    },
+    {
+      "title": "Energy, Resources & Industrials",
+      "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
+      "listItems": [
+        "Industrial Products & Construction",
+        "Mining & Metals",
+        "Oil, Gas & Chemicals",
+        "Power, Utilities & Renewables",
+        "Future of Energy"
+      ],
+      "callToAction": {
+        "text": "meer over Energy, Resources & Industrials",
+        "link": "/industries/energyresourcesandindustrials"
+      }
+    },
+    {
+      "title": "Consumer",
+      "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
+      "listItems": [
+        "Automotive",
+        "Consumer Products",
+        "Retail, Wholesale & Distribution",
+        "Transportation, Hospitality & Services"
+      ],
+      "callToAction": {
+        "text": "meer over Consumer",
+        "link": "/industries/consumer"
+      }
+    }
+  ],
+  "Careers": [{
+      "title": "Senior UX Designer",
+      "description": "Je bent meer dan een designer, je bent een leider, leermeester en klankbord. Met jouw grafische en vooruitstrevende visie inspireer je collega’s. Als Senior UX Designer ben jij de kern van het R&D en design team. Zo maximaliseer en bewaak je de waarde van zowel het product als het projectteam en stimuleer je de innovatie binnen het bedrijf.",
+      "listHeader": "Vacature in het kort:",
+      "listItems": [
+        "Digital Design",
+        "Opzetten en leiden van design sprints",
+        "Stakeholder management",
+        "Brainstorm, workshop en interviewtechnieken",
+        "Research & Development",
+        "Proof of Concepts"
+      ]
+    },
+    {
+      "title": "Senior UX Designer",
+      "description": "Je bent meer dan een designer, je bent een leider, leermeester en klankbord. Met jouw grafische en vooruitstrevende visie inspireer je collega’s. Als Senior UX Designer ben jij de kern van het R&D en design team. Zo maximaliseer en bewaak je de waarde van zowel het product als het projectteam en stimuleer je de innovatie binnen het bedrijf.",
+      "listHeader": "Vacature in het kort:",
+      "listItems": [
+        "Digital Design",
+        "Opzetten en leiden van design sprints",
+        "Stakeholder management",
+        "Brainstorm, workshop en interviewtechnieken",
+        "Research & Development",
+        "Proof of Concepts"
+      ]
+    }
+  ],
+  "About": [{
+      "id": "01",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "02",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "03",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "04",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "05",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "06",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "07",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    },
+    {
+      "id": "08",
+      "title": "We maken jouw wereld een stukje beter.",
+      "description": "Onze drive is: helpen. We willen dat onze oplossingen, techniek en designs een doel dienen. Jouw doel of dat van jouw klanten."
+    }
+  ],
+  "Contact": [{
+      "title": "Adres",
+      "address": "  Wijkermeerweg 42A<br>1948NW Beverwijk"
+    },
+    {
+      "title": "Telefoon",
+      "telephone": "0251-29 33 70"
+    },
+    {
+      "title": "Email",
+      "email": "hi@activecollective.nl"
+    },
+    {
+      "title": "Jobs",
+      "jobsEmail": "jobs@activecollective.nl"
+    },
+    {
+      "title": "Legal",
+      "kvk": "58605061",
+      "btw": "NL853109606B02"
+    },
+    {
+      "title": "Socials",
+      "instagram": "https://www.instagram.com/activecollective/",
+      "facebook": "https://www.facebook.com/activecollective/",
+      "linkedin": "https://www.linkedin.com/company/2519216"
+    }
+  ]
+}

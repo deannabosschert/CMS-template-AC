@@ -1,0 +1,174 @@
+.c-case-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.case-card__img {
+  order: 1;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.case-card__header {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-card__header__heading {
+  order: 2;
+  max-width: 488px;
+}
+
+.case-card__header__text {
+  order: 1;
+  max-width: 90%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-card__cta {
+  order: 3;
+  // padding-top: 112.5%;
+  // margin-top: -112.5%;
+  width: 100%;
+}
+
+// TYPOGRAPHY
+.case-card__header__text {
+  color: $color-highlight-blue;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+// page-specific
+.Cases .c-case-card {
+  color: $color-grey-1;
+
+  &:first-child {
+    .case-card__header,
+    .case-card__header__heading,
+    .case-card__cta {
+      color: $color-white;
+    }
+  }
+
+  .case-card__header__heading,
+  .case-card__cta {
+    color: $color-grey-1;
+  }
+}
+
+.cases-wrapper .case-card:first-child .case-card__cta {
+  padding-left: 3rem;
+  // padding-top: 33%;
+  padding-bottom: 4rem;
+  margin: 0;
+  margin-left: -3rem;
+  margin-bottom: -4rem;
+}
+
+
+
+.c-cases-wrapper .c-case-card:first-child .case-card__cta {
+  // height: 100%;
+  bottom: 40px;
+  // padding: 50% 0;
+  // line-height: 100%;
+  // transform: translate(50%, 50%);
+
+}
+
+@media screen and (max-width: 500px) {
+  .c-case-card .case-card__cta {
+    // padding-top: 130%;
+    // margin-top: -130%;
+  }
+
+  .cases-wrapper .c-case-card:first-child .case-card__cta {
+    padding-left: 2rem;
+    // padding-top: 100%;
+    padding-bottom: 2rem;
+    margin: 0;
+    margin-left: -2rem;
+    margin-bottom: -1rem;
+    padding-right: 2rem;
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .c-case-card .case-card__cta {
+    // padding-top: 120%;
+    // margin-top: -120%;
+  }
+
+  // .cases-wrapper .c-case-card:first-child .case-card__cta {
+  //   padding-left: 2rem;
+  //   padding-top: 90%;
+  //   padding-bottom: 2rem;
+  //   margin: 0;
+  //   margin-left: -2rem;
+  //   margin-bottom: -1rem;
+  //   padding-right: 2rem;
+  //   width: 100%;
+  //   min-width: 100%;
+  // }
+}
+
+@media screen and (min-width: 600px) {
+  .c-case-card .case-card__cta {
+    // padding-top: 30rem;
+    // margin-top: -30rem;
+  }
+
+  .cases-wrapper .c-case-card:first-child .case-card__cta {
+    // padding-left: 3rem;
+    // padding-top: 23rem;
+    // padding-bottom: 2rem;
+    // margin: 0;
+    // margin-left: -3rem;
+    // margin-bottom: -1rem;
+    // padding-right: 2rem;
+    // width: 100%;
+    // min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 855px) {
+  .c-case-card {
+    min-width: 320px;
+  }
+
+ .c-case-card:first-child .case-card__header {
+    max-width: 80%;
+  }
+}
+
+// @media screen and (min-width: 1000px) {
+  // .c-case-card {
+  //   padding-top: 38rem;
+  //   margin-top: -38rem;
+  // }
+// }
+
+// @media screen and (min-width: 1450px) {
+//   .c-case-card {
+//     padding-top: 100%;
+//     margin-top: -100%;
+//   }
+// }
+
+@media screen and (min-width: 2330px) {
+  .c-case-card {
+    // padding-top: 90%;
+    // margin-top: -90%;
+  }
+}

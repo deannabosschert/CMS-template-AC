@@ -1,0 +1,25 @@
+<article class="c-article">
+    {% if articles[article].callToAction %}
+    <header class="article__header">
+      <!-- when there's a call-to-action, render this html using the cta as link button -->
+      <h3 class="article__header__heading">{{ articles[article].title }}</h3>
+      <p class="article__header__tag">{{ articles[article].tag }}</p>
+    </header>
+    {% if articles[article].img.src %}
+    <img class="article__img" src="http://acceptatie.activecollective.nl/assets/img/{{articles[article].img.src}}.jpg" alt="{{ articles[article].img.alt }}" width="345"
+      height="200">
+    {% endif %}
+    {% include "atoms/_callToAction.html" %}
+
+    {% elif articles[article].link %}
+    <header class="article__header">
+      <!-- if there's no cta present, use the title as a link button -->
+      <a class="article__header__cta articleLink" href="{{articles[article].link}}">
+        <h3 class="article__header__heading">{{ articles[article].title }}</h3>
+      </a>
+      <p class="article__header__tag">{{ articles[article].tag }}</p>
+    </header>
+    <img class="article__img" src="http://acceptatie.activecollective.nl/assets/img/{{articles[article].img.src}}.jpg" alt="{{ articles[article].img.alt }}" width="345"
+      height="200">
+    {% endif %}
+  </article>

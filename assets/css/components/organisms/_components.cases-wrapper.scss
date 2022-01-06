@@ -1,0 +1,160 @@
+.c-cases-wrapper {
+  display: grid;
+  grid-gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1075px;
+  height: 100%;
+  // margin-bottom: 3rem;
+
+  article {
+    position: relative;
+    width: 100%;
+
+    img {
+      min-width: 100%;
+    }
+
+    &:first-child {
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      min-width: 100%;
+      margin-top: 0;
+
+      .case-card__header, .article__header,
+      .case-card__cta {
+        position: absolute;
+        // left: 3rem;
+        left: 40px;
+        padding-right: 40px;
+      }
+
+      header {
+        // bottom: 5rem;
+        bottom: 60px;
+        // max-width: 50%;
+        z-index: 1;
+      }
+
+      a {
+        bottom: 3rem;
+      }
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        background: rgb(32, 32, 32);
+        background: -moz-linear-gradient(90deg, rgba(32, 32, 32, 1) 0%, rgba(49, 49, 49, 1) 15%, rgba(135, 138, 141, 1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(32, 32, 32, 1) 0%, rgba(49, 49, 49, 1) 15%, rgba(135, 138, 141, 1) 100%);
+        background: linear-gradient(90deg, rgba(32, 32, 32, 1) 0%, rgba(49, 49, 49, 1) 15%, rgba(135, 138, 141, 1) 100%);
+        filter: brightness(90%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202020", endColorstr="#878a8d", GradientType=1);
+        filter: gradient(startColorstr="#202020", endColorstr="#878a8d", GradientType=1);
+        min-height: 450px;
+        height: 450px;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+    &:nth-child(3) {
+      grid-column-start: 2;
+      grid-column-end: 2;
+    }
+  }
+}
+
+.Home .cases-wrapper {
+  margin-bottom: 0;
+
+  article:first-child {
+    padding: 0;
+
+    img {
+      filter: none;
+    }
+  }
+}
+
+.Nieuws .c-cases-wrapper article {
+  // width: 527px;
+  // height: 618px;
+  min-width: 48%;
+
+  &:first-child {
+    // width: 1078px;
+    // height: 450px;
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 855px) {}
+
+@media screen and (max-width: 855px) {
+  .c-cases-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .c-cases-wrapper article:first-child .case-card__header, .c-cases-wrapper article:first-child .case-card__cta {
+    left: 16px;
+    padding-right: 16px;
+  }
+
+  .detailPage {
+    >main>.c-maatwerk-oplossingen-cases .cases-wrapper img {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .Cases,
+  .Nieuws {
+    .c-maatwerk-oplossingen-cases .cases-wrapper {
+      .c-case-card header p {
+        margin-top: 0;
+      }
+
+      article {
+        margin-bottom: 1.5rem;
+
+        &:first-child {
+          padding: 0rem;
+          margin-bottom: 0;
+
+          header {
+            bottom: 4rem;
+          }
+
+          .cardLink {
+            padding-left: 1.5rem;
+            padding-top: 25rem;
+            padding-bottom: 2rem;
+            margin: 0;
+            margin-left: -1.5rem;
+            margin-bottom: -2rem;
+            padding-right: 2rem;
+            /* margin-top: 0.5rem; */
+            width: 100%;
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1078px) {
+  .Nieuws .c-cases-wrapper article {
+    width: 527px;
+    height: 618px;
+  
+    &:first-child {
+      width: 1078px;
+      height: 450px;
+    }
+  }
+}

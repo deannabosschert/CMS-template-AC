@@ -1,0 +1,61 @@
+---
+layout: templates/_index.html
+pageName: 'Home'
+homePaginaNaam: 'Home'
+title: 'Active Collective'
+metadescription: 'Active Collective is een award-winning digital agency gespecialiseerd in data-science, digital design,
+prototyping, development en cybersecurity. Waardepropositie, klantreis en touchpoints naar diensten die een overtuigend
+geheel vormen.'
+pageHeaderStripe: 'add'
+pageTitle: 'Maatwerk-oplossingen voor complexe problemen'
+pageTitleMobile: 'Maatwerk-oplossingen voor complexe problemen'
+pageDescription: 'Een award winning digital agency gespecialiseerd in data-science, digital design, prototyping,
+development en cybersecurity. Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten
+die een overtuigend geheel vormen.'
+pageDescriptionMobile: 'Een award winning digital agency gespecialiseerd in data-science, digital design, prototyping,
+development en cybersecurity. Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten
+die een overtuigend geheel vormen.'
+logoColor: 'white'
+---
+<header class="c-hero-header">
+  <section class="hero-header__content">
+    <header class="hero-header__content__header">
+      {% include "atoms/_pageHeaderStripe.html" %}
+      <h1 class="hero-header__content__header__heading">Up for a challenge to Humanize technology?</h1>
+      <p class="hero-header__content__header__text">Wij creëren maatschappelijke vooruitgang via vernieuwende
+        technologie.</p>
+    </header>
+    <a class="hero-header__content__link" href="/services/">Services & Technologies</a>
+  </section>
+</header>
+<section class="c-maatwerk-oplossingen-articles">
+  <h2 class="maatwerk-oplossingen-articles__heading">{{ pageTitle }}</h2>
+  <p class="maatwerk-oplossingen-articles__text">{{ pageDescription }}</p>
+  <nav class="maatwerk-oplossingen-articles__nav">
+    <ul class="maatwerk-oplossingen-articles__nav__list">
+      {% for articleTag in showArticleNav %}
+      <li class="maatwerk-oplossingen-articles__nav__list__listItem"><a
+          class="maatwerk-oplossingen-articles__nav__list__listItem__link"
+          href="/industries/{{articleTag | replace(" ", "") | replace(",", "") | replace("&", "and") | replace("+", "and") | lower }}">{{ articleTag }}</a>
+      </li>
+      {% endfor %}
+      <!-- {% for article in articles | groupby('article') %}
+      <li><a
+          href="/industries/{{tag | replace(" ", "") | replace(",", "") | replace("&", "and") | replace("+", "and") | lower }}">{{ tag }}</a>
+      </li>
+      {% endfor %} -->
+    </ul>
+  </nav>
+  {% include "organisms/_artikelen.html" %}
+</section>
+<div class="blackBackground-wrapper">
+  <section class="c-maatwerk-oplossingen-cases">
+    <h2>Cases</h2>
+    <div class="c-cases-wrapper">
+      {% for case in showCases %}
+      {% include "molecules/_caseCard.html" %}
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% include "molecules/_partners.html" %}

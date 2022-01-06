@@ -1,0 +1,19 @@
+---
+layout: templates/_detailPage.html
+title: Nieuws
+breadcrumbs: [{ name: "Home", link: "/" }, { name: "Nieuws", link: "/nieuws/"}]
+pageHeaderStripe: 'add'
+pageName: 'Nieuws'
+pageTitle: 'Nieuws'
+pageTitleMobile: 'Nieuws'
+pageDescription: 'Samen werken aan een betere, slimmere toekomst door middel van design.'
+pageDescriptionMobile: 'Samen werken aan een betere, slimmere toekomst door middel van design.'
+
+showArticles: ['healthcare', 'digitalisering', 'warschau']
+---
+<section class="c-maatwerk-oplossingen-cases">
+  <h2 class="u-text-invisible">Articles</h2>
+  <div class="cases-wrapper">
+    {% include "organisms/_artikelen.html" %}
+  </div>
+</section>

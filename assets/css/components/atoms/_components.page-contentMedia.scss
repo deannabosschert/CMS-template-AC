@@ -1,0 +1,31 @@
+/* PAGES- CAREERS */
+.Careers {
+  .c-page-contentVideo {
+    // margin-bottom: 32px;
+    max-width: 100%;
+    height: auto;
+
+    &:first-of-type {
+      margin-bottom: 6.5rem;
+      width: 100vw;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+
+  .c-page-contentImage {
+    margin: 64px 0;
+    width: 100%;
+    height: auto;
+  }
+
+
+@media screen and (max-width: 750px) {
+  .c-page-contentVideo {
+    max-width: 100%;
+    height: fit-content;
+    margin-bottom: 32px;
+  }
+}

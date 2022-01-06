@@ -1,0 +1,143 @@
+/* ==========================================================================
+   ELEMENTS- TYPOGRAPHY
+   ========================================================================== */
+$inuit-font-size-h1: 54px !default;
+$inuit-font-size-h2: 34px !default;
+/* $inuit-font-size-h2: 20px !default; */
+$inuit-font-size-h3: 28px !default;
+$inuit-font-size-h4: 22px !default;
+$inuit-font-size-h5: 26px !default;
+$inuit-font-size-h6: 16px !default;
+
+body {
+  color: $color-body-grey;
+  font-family: Helvetica Neue;
+  word-break: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h1 {
+  @include inuit-font-size($inuit-font-size-h1); //54px
+  color: $color-black;
+  line-height: 66px;
+  letter-spacing: 0.03em;
+  max-width: 62rem;
+}
+
+h2 {
+  @include inuit-font-size($inuit-font-size-h2); //34px
+  color: $color-white;
+  line-height: 42px;
+}
+
+h3 {
+  @include inuit-font-size($inuit-font-size-h3); //28px
+  color: $color-white;
+  line-height: 36px;
+}
+
+h4 {
+  @include inuit-font-size($inuit-font-size-h4); //22px
+  line-height: 27px;
+  color: $color-grey-1;
+}
+
+h5 {
+  @include inuit-font-size($inuit-font-size-h5); //26px
+  line-height: 32px;
+}
+
+h6 {
+  @include inuit-font-size($inuit-font-size-h6); //16px
+}
+
+p {
+  color: $color-grey-2;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+ul li {
+  color: $color-grey-1;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+address {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+footer address,
+a {
+  color: $color-white;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+section,
+section article,
+.page-header-descriptions {
+  >a {
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    &::after {
+      content: "⭢";
+      margin-left: 0.75rem;
+      font-size: 2rem;
+      line-height: 22px;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+ 
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+ 
+    section>header>p {
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+.Careers {
+    h1 {
+      color: white;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 44px;
+      letter-spacing: 0.03em;
+    }}
+
+    .lifeSciencesAndHealthcare {
+      h3 {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 95%;
+      }
+    }
+  }

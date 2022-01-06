@@ -1,0 +1,198 @@
+.c-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  max-width: 1075px;
+  margin-bottom: 80px;
+}
+
+.page-header__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page-header__info__description {
+  max-width: 48rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.detailPage {
+  .page-header-descriptions p {
+    width: 35rem;
+  }
+}
+
+.Services, .About {
+  .page-header-description p {
+    width: 90%;
+  }
+}
+
+.Services,
+.Industries {
+  .c-page-header {
+    margin-bottom: 6rem;
+  }}
+
+// TYPOGRAPHY
+.page-header__info {
+ 
+
+  >a {
+    color: $color-black;
+  }
+
+  >a,
+  section a {
+    min-width: 100%;
+
+    &::after {
+      margin-left: 0.75rem;
+    }
+  }
+}
+
+.page-header__info__description {
+  color: $color-grey-2;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  min-width: 52rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  .title--desktop,
+  .description--desktop {
+    display: none;
+  }
+
+  .title--mobile,
+  .description--mobile {
+    display: block;
+  }
+
+  .c-page-info .page-info__article {
+    margin-bottom: 1rem;
+  }
+
+  .c-page-header {
+    margin-bottom: 4rem;
+  }
+
+  >.page-header__info {
+    .page-header__info__description {
+      width: 100%;
+    }
+  }
+
+  .Careers {
+    >.c-page-header {
+      margin-bottom: 8rem;
+    }
+  }
+
+  .Contact {
+    .c-page-header {
+      margin-bottom: 1rem;
+    }
+
+    .page-header__info__description, .page-header-descriptions p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 300;
+    }
+  }
+
+  .Nieuwsartikel,
+  .casePage {
+    .c-page-header {
+      margin-bottom: 3rem;
+
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+
+      .page-header-description {
+        aside {
+          order: 1;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          order: 2;
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .casePage {
+    .c-page-header {
+      margin-bottom: 80px;
+
+      h1 {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0.03em;
+        max-width: 90%;
+      }
+    }
+  }
+
+  .About {
+    .c-page-header {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .Cases, .Nieuws {
+    .c-page-header {
+      margin-bottom: 1rem;
+    }
+  }
+
+
+  .Services,
+  .Industries {
+    .c-page-header {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .title--desktop,
+  .description--desktop {
+    display: block;
+  }
+
+  .title--mobile,
+  .description--mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 959px) {
+
+.Services,
+.Industries {
+  .c-page-header {
+    margin-bottom: 32px;
+  }}
+}
+
+@media screen and (max-width: 840px) {
+  .page-header__info__description {
+    min-width: 100%;
+  }
+}

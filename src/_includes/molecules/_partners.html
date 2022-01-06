@@ -1,0 +1,14 @@
+<section class="c-partners">
+    <header class="partners__header">
+      <h2 class="partners__header__heading">Partners waar we graag mee samenwerken</h2>
+      <p class="partners__header__text">Een award-winning digital agency gespecialiseerd in data-science, digital design, prototyping, development en
+        cybersecurity. Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een
+        overtuigend geheel vormen.</p>
+    </header>
+    <div class="partners__logoContainer">
+      {% for image in collections.partnerLogos %}
+        <img class="partners__logoContainer__partnerLogo" src="http://acceptatie.activecollective.nl/{{image}}"
+          alt="logo of partner" width="146" height="90">
+      {% endfor %}
+    </div>
+  </section>

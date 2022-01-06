@@ -1,0 +1,35 @@
+{
+    "projectPicture": {
+      "title": "Improving brain tumor treatment decisions through a digital approach",
+      "tag": "project picture",
+      "link": "/cases/projectpicture/",
+      "img": {
+        "src": "case_images/projectPicture",
+        "alt": "photo of someone looking at the project picture application on a computer screen",
+        "width": 1075,
+        "height": 450
+      }
+    },
+    "lidlNL": {
+      "title": "Meer interne betrokkenheid en een sterker werkgeversmerk voor Lidl",
+      "tag": "lidl",
+      "link": "/cases/lidlnl/",
+      "img": {
+        "src": "case_images/lidlNL_square",
+        "alt": "photo of Lidl employees posing for a group picture, smiling and having happy expressions",
+        "width": 527,
+        "height": 450
+      }
+    },
+    "willAndCo": {
+      "title": "De digitale make-over van Will&Co: sterker merk en betere vindbaarheid",
+      "tag": "will&co",
+      "link": "/cases/willandco/",
+      "img": {
+        "src": "case_images/willAndCo_square",
+        "alt": "screen capture of the Will&Co's style guide",
+        "width": 527,
+        "height": 450
+      }
+    }
+}

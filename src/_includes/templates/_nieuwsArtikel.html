@@ -1,0 +1,13 @@
+---
+layout: templates/_detailPage.html
+pageType: 'Nieuwsartikel'
+---
+<div class="content">
+  {{ content | safe }}
+</div>
+<div class="blackBackgroundOtherArticles">
+<section class="c-other-articles">
+  <h2 class="other-articles__heading">Bekijk ook onze andere artikelen</h2>
+  {% include "organisms/_artikelen.html" %}
+</section>
+</div>
