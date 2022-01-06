@@ -15,7 +15,7 @@ collections:
     files:
       - label: "Info"
         name: "info"
-        file: "src/_data/contact/info.json"
+        file: "src/_data/pages/contact/info.json"
         fields:
           - label: "Address"
             name: "address"
@@ -29,7 +29,6 @@ collections:
             fields:
               - {label: Title, name: "heading", widget: string}
               - {label: Telephone number, name: "data", widget: number}
-        
           - label: "Email"
             name: "email"
             widget: "object"
@@ -51,7 +50,7 @@ collections:
               - {label: BTW, name: "btw", widget: string}
       - label: "Socials"
         name: "socials"
-        file: "src/_data/contact/socials.json"
+        file: "src/_data/pages/contact/socials.json"
         fields:
           - {label: Title, name: "title", widget: "hidden"}
           - {label: Instagram URL, name: instagram, widget: string}
@@ -66,9 +65,9 @@ collections:
     files:
       - label: "Values"
         name: "list"
-        file: "src/_data/about/values.json"
+        file: "src/_data/pages/about/manifesto.json"
         fields:
-          - label: "Values"
+          - label: "Manifesto"
             name: "list"
             widget: "list"
             create: true
