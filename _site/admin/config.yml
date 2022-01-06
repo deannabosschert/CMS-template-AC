@@ -4,12 +4,14 @@ backend:
 # This line should *not* be indented
 local_backend: true # Whether to use the local backend (optional; defaults to false)
 publish_mode: editorial_workflow
+logo_url: https://activecollective-netlify.netlify.app/assets/img/logos/active-collective_logo_white.svg
 # This line should *not* be indented
 media_folder: "assets/img/uploads" # Media files will be stored in the repo under assets/images/uploads
 public_folder: "/assets/img/uploads" # Media files will be served from /assets/images/uploads
 collections:
   - label: "Contact Page"
     name: "contact"
+    preview_path: "https://activecollective-netlify.netlify.app/contact/"
     files:
       - label: "Info"
         name: "info"
