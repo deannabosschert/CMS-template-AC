@@ -1,3 +1,7 @@
-{% for content in pageContents[pageName] %}
-{% include "molecules/_listItem.html" %}
+{% for listItem in params.list %}
+{{ component('molecules', '_listItem', {
+  id: listItem.id,
+  title: listItem.title,
+  description: listItem.description
+}) }}
 {% endfor %}

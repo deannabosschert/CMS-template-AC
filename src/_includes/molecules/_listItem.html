@@ -1,15 +1,15 @@
 <article class="c-listItem">
-    {% if content.id %}
-    <h3 class="listItem__heading"><span class="listItem__heading__id">{{ content.id }}</span>{{ content.title }}</h3>
+    {% if params.id %}
+    <h3 class="listItem__heading"><span class="listItem__heading__id">{{ params.id }}</span>{{ params.title }}</h3>
     {% else %}
-    <h3 class="listItem__heading">{{ content.title }}</h3>
+    <h3 class="listItem__heading">{{ params.title }}</h3>
     {% endif%}
   
-    <p class="listItem__description">{{ content.description }}</p>
+    <p class="listItem__description">{{ params.description }}</p>
     {% include "atoms/_listHeader.html" %}
-    {% if content.listItems %}
+    {% if params.listItems %}
     <ul class="listItem__list">
-      {% for listItem in content.listItems %}
+      {% for listItem in params.listItems %}
       <li class="listItem__list__listItem">{{ listItem }}</li>
       {% endfor %}
     </ul>

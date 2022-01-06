@@ -12,10 +12,8 @@ maatwerkOplossingenCases: ['lidlNL', 'willAndCo']
 </head>
 
 <body class="{{homePaginaNaam}}">
-  <!-- <div class="testwidth">
-    <div class="testwidthinner">
-    </div>
-  </div> -->
+  {%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
   {% include "sections/_header.html" %}
   <main class="{{pageName}}  {{pageType}}">
     {{ content | safe }}

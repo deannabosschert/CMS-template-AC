@@ -1,7 +1,7 @@
 ---
 layout: templates/_detailPage.html
 title: 'About'
-pageName: 'About'
+pageName: 'about'
 breadcrumbs: [{ name: "Home", link: "/" }, { name: "About", link: "/about/"}]
 pageHeaderStripe: 'add'
 pageTitle: 'Nieuwsgierigheid brengt ons verder'
@@ -14,13 +14,19 @@ pageDescriptionMobile: 'Meedenken en oplossingen verzinnen zit in ons DNA. We zi
 omdat we luisteren en ons graag open en eager opstellen. Soms zeggen we nee, want niet iedere opdracht past bij ons.
 Maar dat weten we natuurlijk pas nadat we nieuwsgierig zijn geweest…'
 ---
+
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
 <section class="c-team-photos">
   {% include "molecules/_teamPhotos.html" %}
 </section>
 <h2 class="u-text-invisible">Manifesto</h2>
 <div class="backgroundColorBlack">
+
 <section class="c-lists">
-  {% include "organisms/_lists.html" %}
+  {{ component('organisms', '_lists', {
+    list: pages[pageName].manifesto.list
+  }) }}
 </section>
 </div>
 {% include "molecules/_partners.html" %}
