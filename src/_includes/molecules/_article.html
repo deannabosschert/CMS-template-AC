@@ -6,7 +6,7 @@
       <p class="article__header__tag">{{ articles[article].tag }}</p>
     </header>
     {% if articles[article].img.src %}
-    <img class="article__img" src="http://acceptatie.activecollective.nl/assets/img/{{articles[article].img.src}}.jpg" alt="{{ articles[article].img.alt }}" width="345"
+    <img class="article__img" src="/assets/img/{{articles[article].img.src}}.jpg" alt="{{ articles[article].img.alt }}" width="345"
       height="200">
     {% endif %}
     {% include "atoms/_callToAction.html" %}
@@ -19,7 +19,7 @@
       </a>
       <p class="article__header__tag">{{ articles[article].tag }}</p>
     </header>
-    <img class="article__img" src="http://acceptatie.activecollective.nl/assets/img/{{articles[article].img.src}}.jpg" alt="{{ articles[article].img.alt }}" width="345"
+    <img class="article__img" src="/assets/img/{{articles[article].img.src}}.jpg" alt="{{ articles[article].img.alt }}" width="345"
       height="200">
     {% endif %}
   </article>
