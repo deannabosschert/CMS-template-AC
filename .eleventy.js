@@ -1,7 +1,12 @@
+const htmlmin = require("html-minifier");
+
+
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/fonts')
   eleventyConfig.addPassthroughCopy('assets/img')
   eleventyConfig.addPassthroughCopy({'src/js': 'assets/js'})
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+
   // eleventyConfig.addPassthroughCopy('src/_data')
 
   const fg = require('fast-glob')
@@ -11,14 +16,28 @@ module.exports = (eleventyConfig) => {
     return logos
   })
 
+
+  // Minify HTML
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    // if (outputPath.endsWith(".html")) {
+    // EDIT: only for .html files outside of the `posts` directory
+    if (outputPath.endsWith(".html") && !outputPath.includes("posts")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
+
   return {
     dir: {
-      input: 'src',
-      data: '_data',
-      includes: '_includes',
-      output: '_site'
+      input: 'src'
     },
-    templateFormats: ['html', 'njk'],
     htmlTemplateEngine: 'njk',
     passthroughFileCopy: true
   }
