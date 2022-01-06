@@ -622,7 +622,7 @@ body {
   z-index: -1;
 }
 
-.About .backgroundColorBlack {
+.about .backgroundColorBlack {
   min-width: 100vw;
   width: 100vw;
   max-width: 100vw;
@@ -1435,10 +1435,10 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  .Contact .contact-wrapper {
+  .contact .contact-wrapper {
     margin-bottom: 0;
   }
-  .Contact .contact-wrapper > img {
+  .contact .contact-wrapper > img {
     order: 1;
     margin-bottom: 2.5rem;
   }
@@ -1883,9 +1883,9 @@ body.Home a.home:link,
 body.Services a.services:link,
 body.Industries a.industries:link,
 body.Cases a.cases:link,
-body.About a.about:link,
+body.about a.about:link,
 body.Careers a.careers:link,
-body.Contact a.contact:link {
+body.contact a.contact:link {
   text-decoration: underline;
 }
 
@@ -2115,24 +2115,24 @@ body.Contact a.contact:link {
 }
 
 /* page-specific */
-.About .listItem__heading__id {
+.about .listItem__heading__id {
   color: #67C8F2;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 }
 
-.Contact .c-listItem {
+.contact .c-listItem {
   color: #878A8D;
 }
-.Contact .c-listItem .c-cta {
+.contact .c-listItem .c-cta {
   font-weight: 300;
   font-size: 22px;
   line-height: 30px;
   text-transform: none;
   color: #878A8D;
 }
-.Contact .c-listItem .c-cta::after {
+.contact .c-listItem .c-cta::after {
   content: "";
 }
 
@@ -2196,22 +2196,22 @@ body.Contact a.contact:link {
     margin-left: -1.75rem;
   }
 }
-.Contact .c-listItem:nth-child(1) {
+.contact .c-listItem:nth-child(1) {
   order: 1;
 }
-.Contact .c-listItem:nth-child(2) {
+.contact .c-listItem:nth-child(2) {
   order: 2;
 }
-.Contact .c-listItem:nth-child(3) {
+.contact .c-listItem:nth-child(3) {
   order: 1;
 }
-.Contact .c-listItem:nth-child(4) {
+.contact .c-listItem:nth-child(4) {
   order: 3;
 }
-.Contact .c-listItem:nth-child(5) {
+.contact .c-listItem:nth-child(5) {
   display: none;
 }
-.Contact .c-listItem:nth-child(6) {
+.contact .c-listItem:nth-child(6) {
   display: none;
 }
 
@@ -2240,7 +2240,7 @@ body.Contact a.contact:link {
   margin: 0;
 }
 
-.Contact .contact-wrapper .c-lists {
+.contact .contact-wrapper .c-lists {
   order: 2;
   flex-direction: column;
   margin-bottom: 3.5rem;
@@ -2248,51 +2248,51 @@ body.Contact a.contact:link {
   min-width: 550px;
   width: 45%;
 }
-.Contact .contact-wrapper .c-lists article {
+.contact .contact-wrapper .c-lists article {
   min-width: 300px;
   width: 45%;
   margin-bottom: 1rem;
 }
-.Contact .contact-wrapper .c-lists article h3 {
+.contact .contact-wrapper .c-lists article h3 {
   color: #313131;
   margin-bottom: 0.5rem;
 }
-.Contact .contact-wrapper .c-lists article address {
+.contact .contact-wrapper .c-lists article address {
   color: #878A8D;
   font-size: 22px;
   line-height: 30px;
 }
-.Contact .contact-wrapper .c-lists article p {
+.contact .contact-wrapper .c-lists article p {
   min-width: max-content;
   max-width: 90%;
   margin-bottom: 0;
 }
-.Contact .contact-wrapper .c-lists .social-media-icons img {
+.contact .contact-wrapper .c-lists .social-media-icons img {
   width: auto;
   height: auto;
   padding: 0 0.2rem;
 }
-.Contact .contact-wrapper .c-lists .social-media-icons a::after {
+.contact .contact-wrapper .c-lists .social-media-icons a::after {
   padding: 0;
   margin: 0;
 }
 
-.Contact .c-listItem:nth-child(5) {
+.contact .c-listItem:nth-child(5) {
   order: 5;
   display: flex;
   flex-direction: column;
 }
-.Contact .c-listItem:nth-child(6) {
+.contact .c-listItem:nth-child(6) {
   display: flex;
   flex-direction: column;
 }
 
-.About .c-lists {
+.about .c-lists {
   padding-top: 80px;
   max-width: 1075px;
   margin-bottom: 128px;
 }
-.About .c-lists h3 span {
+.about .c-lists h3 span {
   display: block;
   margin-bottom: 1rem;
 }
@@ -2842,7 +2842,7 @@ body.Contact a.contact:link {
   width: 35rem;
 }
 
-.Services .page-header-description p, .About .page-header-description p {
+.Services .page-header-description p, .about .page-header-description p {
   width: 90%;
 }
 
@@ -2897,10 +2897,10 @@ body.Contact a.contact:link {
     margin-bottom: 8rem;
   }
 
-  .Contact .c-page-header {
+  .contact .c-page-header {
     margin-bottom: 1rem;
   }
-  .Contact .page-header__info__description, .Contact .page-header-descriptions p {
+  .contact .page-header__info__description, .contact .page-header-descriptions p {
     font-size: 20px;
     line-height: 28px;
     font-weight: 300;
@@ -2937,7 +2937,7 @@ body.Contact a.contact:link {
     max-width: 90%;
   }
 
-  .About .c-page-header {
+  .about .c-page-header {
     margin-bottom: 1.5rem;
   }
 

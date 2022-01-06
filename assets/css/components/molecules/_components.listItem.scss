@@ -49,7 +49,7 @@
 }
 
 /* page-specific */
-.About {
+.about {
   .listItem__heading__id {
     color: $color-highlight-blue;
     font-weight: bold;
@@ -58,7 +58,7 @@
   }
 }
 
-.Contact {
+.contact {
   .c-listItem {
     color: $color-grey-2;
 
@@ -149,7 +149,7 @@
   }
 }
 
-.Contact {
+.contact {
   .c-listItem {
     &:nth-child(1) {
       order: 1;
