@@ -1,22 +1,23 @@
-[{
-    "title": "Adres",
-    "address": "  Wijkermeerweg 42A<br>1948NW Beverwijk"
-  },
-  {
-    "title": "Telefoon",
-    "telephone": "0251-29 33 70"
-  },
-  {
-    "title": "Email",
-    "email": "hi@activecollective.nl"
-  },
-  {
-    "title": "Jobs",
-    "jobsEmail": "jobs@activecollective.nl"
-  },
-  {
-    "title": "Legal",
-    "kvk": "58605061",
-    "btw": "NL853109606B02"
+{
+    "address": {
+      "heading": "Adres",
+      "data": "Wijkermeerweg 42A<br>1948NW Beverwijk"
+    },
+    "telephone": {
+      "heading": "Telefoon",
+      "data": "0251-29 33 70"
+    },
+    "email": {
+      "heading": "Email",
+      "data": "hi@activecollective.nl"
+    },
+    "jobs": {
+      "heading": "Jobs",
+      "data": "jobs@activecollective.nl"
+    },
+    "legal": {
+      "heading": "Legal",
+      "kvk": "58605061",
+      "btw": "NL853109606B02"
+    }
   }
-]

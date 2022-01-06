@@ -17,37 +17,42 @@ collections:
         name: "info"
         file: "src/_data/contact/info.json"
         fields:
-          - label: Adres
-            name: adres
-            widget: list
+          - label: "Address"
+            name: "address"
+            widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Address, name: address, widget: string}
-          - label: Telefoon
-            name: phone
-            widget: list
+              - {label: Title, name: "heading", widget: string}
+              - {label: Address, name: "data", widget: string}
+          - label: "Telephone"
+            name: "telephone"
+            widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Telephone, name: telephone, widget: string}
-          - label: Email
-            name: mail
-            widget: list
+              - {label: Title, name: "heading", widget: string}
+              - {label: Telephone number, name: "data", widget: number}
+        
+          - label: "Email"
+            name: "email"
+            widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: E-mail, name: email, widget: string}
-          - label: Jobs
-            name: jobs
-            widget: list
+              - {label: Title, name: "heading", widget: string}
+              - {label: E-mail, name: "data", widget: string}
+          - label: "Jobs"
+            name: "jobs"
+            widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: E-mail, name: jobsEmail, widget: string}
-          - label: Legal
-            name: legal
-            widget: list
+              - {label: Title, name: "heading", widget: string}
+              - {label: E-mail, name: "data", widget: string}
+          - label: "Legal"
+            name: "legal"
+            widget: "object"
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: KvK, name: kvk, widget: string}
-              - {label: BTW, name: btw, widget: string}       
+              - {label: Title, name: "heading", widget: string}
+              - {label: KvK, name: "kvk", widget: number}
+              - {label: BTW, name: "btw", widget: string}
+        
+            
+                
+        
       - label: "Socials"
         name: "socials"
         file: "src/_data/contact/socials.json"
