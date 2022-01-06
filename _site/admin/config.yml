@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+# This line should *not* be indented
+local_backend: true # Whether to use the local backend (optional; defaults to false)
+publish_mode: editorial_workflow
+# This line should *not* be indented
+media_folder: "assets/img/uploads" # Media files will be stored in the repo under assets/images/uploads
+public_folder: "/assets/img/uploads" # Media files will be served from /assets/images/uploads
+collections:
+  - label: "Contact Page"
+    name: "contact"
+    files:
+      - label: "Info"
+        name: "info"
+        file: "src/_data/contact/info.json"
+        fields:
+          - label: Adres
+            name: adres
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Address, name: address, widget: string}
+          - label: Telefoon
+            name: phone
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Telephone, name: telephone, widget: string}
+          - label: Email
+            name: mail
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: E-mail, name: email, widget: string}
+          - label: Jobs
+            name: jobs
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: E-mail, name: jobsEmail, widget: string}
+          - label: Legal
+            name: legal
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: KvK, name: kvk, widget: string}
+              - {label: BTW, name: btw, widget: string}       
+      - label: "Socials"
+        name: "socials"
+        file: "src/_data/contact/socials.json"
+        fields:
+          - {label: Title, name: "title", widget: "hidden"}
+          - {label: Instagram URL, name: instagram, widget: string}
+          - {label: Facebook URL, name: facebook, widget: string}
+          - {label: LinkedIN URL, name: linkedin, widget: string}

@@ -5,7 +5,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/fonts')
   eleventyConfig.addPassthroughCopy('assets/img')
   eleventyConfig.addPassthroughCopy({'src/js': 'assets/js'})
-  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico")
+  eleventyConfig.addPassthroughCopy({'./src/admin/config.yml': './admin/config.yml'})
 
   // eleventyConfig.addPassthroughCopy('src/_data')
 
