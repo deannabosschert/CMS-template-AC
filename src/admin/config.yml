@@ -88,7 +88,7 @@ collections:
         name: "list"
         file: "src/_data/pages/industries/content.json"
         fields:
-          - label: "Manifesto"
+          - label: "Industries"
             name: "list"
             widget: "list"
             create: true
@@ -96,7 +96,13 @@ collections:
             fields:
               - {label: Title, name: "title", widget: string}
               - {label: Description, name: "description", widget: text}
-              - {label: List items, name: "listItems", widget: list}
+              - label: "List items"
+                name: listItems
+                widget: "list"
+                create: true
+                collapsed: false
+                fields:
+                  - {label: Text, name: "text", widget: string}
               - label: "Call to Action"
                 name: "callToAction"
                 widget: "object"
