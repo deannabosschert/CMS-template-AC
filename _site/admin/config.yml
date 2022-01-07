@@ -109,6 +109,29 @@ collections:
                 fields:
                   - {label: Text, name: "text", widget: string}
                   - {label: Link, name: "link", widget: string}
+  - label: "Services Page"
+    name: "Services"
+    preview_path: "https://activecollective-netlify.netlify.app/services/"
+    files:
+      - label: "Services list"
+        name: "list"
+        file: "src/_data/pages/services/content.json"
+        fields:
+          - label: "Services"
+            name: "list"
+            widget: "list"
+            create: true
+            collapsed: false
+            fields:
+              - {label: Title, name: "title", widget: string}
+              - {label: Description, name: "description", widget: text}
+              - label: "List items"
+                name: listItems
+                widget: "list"
+                create: true
+                collapsed: false
+                fields:
+                  - {label: Text, name: "text", widget: string}
                 
   - label: "Posts"
     name: posts

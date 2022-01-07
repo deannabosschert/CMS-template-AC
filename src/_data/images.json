@@ -1,5 +1,5 @@
 {
-  "Services": {
+  "services": {
     "contentImage": {
       "src": "team/jesper_rectangle",
       "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations ",
@@ -7,7 +7,7 @@
       "height": "289"
     }
   },
-  "Industries": {
+  "industries": {
     "coverImage": {
       "src": "team/team_meeting",
       "alt": "photograph of 6 colleagues from different disciplines like security, design, development and project management and such in a meeting room together, working on their macbooks and discussing something ",
@@ -21,7 +21,7 @@
       "height": "289"
     }
   },
-  "Careers": {
+  "careers": {
     "coverImage": {
         "src": "team/team_meeting_clients",
         "alt": "photograph of the Active Collective team in a meeting with a client",
@@ -178,7 +178,7 @@
       "height": "502"
     }
   },
-  "Consumer": {
+  "consumer": {
     "coverImage": {
       "src": "case_images/projectPicture",
       "alt": "cover image for this industry, [insert alt text]",

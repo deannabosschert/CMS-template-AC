@@ -833,10 +833,10 @@ section article > a::after,
     font-size: 20px;
   }
 
-  .Careers h1 {
+  .careers h1 {
     color: white;
   }
-  .Careers h1 {
+  .careers h1 {
     font-size: 36px;
     font-weight: bold;
     line-height: 44px;
@@ -1048,10 +1048,10 @@ img {
     margin-bottom: 33px;
   }
 
-  .Careers .breadcrumbs__list__listItem__link {
+  .careers .breadcrumbs__list__listItem__link {
     color: #FFFFFF;
   }
-  .Careers .breadcrumbs__list__listItem__link:last-child {
+  .careers .breadcrumbs__list__listItem__link:last-child {
     color: #FFFFFF;
   }
 }
@@ -1358,7 +1358,7 @@ img {
   color: #313131;
 }
 
-.Careers .c-content {
+.careers .c-content {
   min-width: 100%;
   width: 100%;
   max-width: 709px;
@@ -1366,8 +1366,8 @@ img {
   flex-direction: column;
   align-items: center;
 }
-.Careers .content__text,
-.Careers .content__quote {
+.careers .content__text,
+.careers .content__quote {
   max-width: 40rem;
   margin-bottom: 2rem;
 }
@@ -1443,7 +1443,7 @@ img {
     margin-bottom: 2.5rem;
   }
 
-  .Careers .c-content {
+  .careers .c-content {
     margin-top: 5rem;
   }
 
@@ -1880,11 +1880,11 @@ img {
 }
 
 body.Home a.home:link,
-body.Services a.services:link,
+body.services a.services:link,
 body.industries a.industries:link,
 body.Cases a.cases:link,
 body.about a.about:link,
-body.Careers a.careers:link,
+body.careers a.careers:link,
 body.contact a.contact:link {
   text-decoration: underline;
 }
@@ -2052,19 +2052,19 @@ body.contact a.contact:link {
 }
 
 @media screen and (max-width: 600px) {
-  .Careers .header-nav__logoColorSwitch u-text-invisible, .Careers .header-nav__logoColorSwitch__img {
+  .careers .header-nav__logoColorSwitch u-text-invisible, .careers .header-nav__logoColorSwitch__img {
     display: block;
   }
-  .Careers .header-nav__logo, .Careers .header-nav__logo__img {
+  .careers .header-nav__logo, .careers .header-nav__logo__img {
     display: none;
   }
-  .Careers .logoheader-nav__logo {
+  .careers .logoheader-nav__logo {
     display: none;
   }
-  .Careers .c-header-nav .menu-icon .navicon {
+  .careers .c-header-nav .menu-icon .navicon {
     background: white;
   }
-  .Careers .c-header-nav .menu-icon .navicon:before, .Careers .c-header-nav .menu-icon .navicon:after {
+  .careers .c-header-nav .menu-icon .navicon:before, .careers .c-header-nav .menu-icon .navicon:after {
     background: white;
   }
 }
@@ -2136,37 +2136,37 @@ body.contact a.contact:link {
   content: "";
 }
 
-.Careers .c-listItem {
+.careers .c-listItem {
   padding-bottom: 3rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid #878A8D;
 }
-.Careers .c-listItem:last-of-type {
+.careers .c-listItem:last-of-type {
   border: none;
   padding: 0;
   margin: 0;
 }
-.Careers .listItem__description {
+.careers .listItem__description {
   color: #313131;
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 2rem;
 }
-.Careers .listItem__heading {
+.careers .listItem__heading {
   font-weight: 300;
   font-size: 22px;
   line-height: 30px;
   color: #878A8D;
 }
-.Careers .listItem__list {
+.careers .listItem__list {
   font-size: 18px;
   line-height: 36px;
 }
-.Careers .listItem__list__listItem {
+.careers .listItem__list__listItem {
   list-style: none;
   margin-bottom: 0.5rem;
 }
-.Careers .listItem__list__listItem::before {
+.careers .listItem__list__listItem::before {
   content: url("/assets/img/icons/checkbox-checked.png");
   width: 0.5rem;
   height: inherit;
@@ -2189,10 +2189,10 @@ body.contact a.contact:link {
     margin-bottom: 0.2rem;
   }
 
-  .Careers .listItem__list__listItem {
+  .careers .listItem__list__listItem {
     padding-left: 1.75rem;
   }
-  .Careers .listItem__list__listItem::before {
+  .careers .listItem__list__listItem::before {
     margin-left: -1.75rem;
   }
 }
@@ -2301,9 +2301,9 @@ body.contact a.contact:link {
   margin-bottom: 1rem;
 }
 
-.Services .c-lists h3,
-.Services .c-lists a,
-.Services .c-lists ul li,
+.services .c-lists h3,
+.services .c-lists a,
+.services .c-lists ul li,
 .industries .c-lists h3,
 .industries .c-lists a,
 .industries .c-lists ul li {
@@ -2323,16 +2323,16 @@ body.contact a.contact:link {
 }
 @media screen and (max-width: 690px) {
   body > main .c-lists,
-.Services > main .c-lists,
+.services > main .c-lists,
 .industries > main .c-lists,
-.Careers > main .c-lists {
+.careers > main .c-lists {
     grid-template-columns: 1fr;
     grid-gap: 64px;
   }
   body > main .c-lists img,
-.Services > main .c-lists img,
+.services > main .c-lists img,
 .industries > main .c-lists img,
-.Careers > main .c-lists img {
+.careers > main .c-lists img {
     padding: 0;
   }
 }
@@ -2738,12 +2738,12 @@ body.contact a.contact:link {
   margin-left: 0.75rem;
 }
 
-/* PAGES- CAREERS */
-.Careers .c-page-contentVideo {
+/* PAGES- careers */
+.careers .c-page-contentVideo {
   max-width: 100%;
   height: auto;
 }
-.Careers .c-page-contentVideo:first-of-type {
+.careers .c-page-contentVideo:first-of-type {
   margin-bottom: 6.5rem;
   width: 100vw;
   height: auto;
@@ -2787,7 +2787,7 @@ body.contact a.contact:link {
     margin-bottom: 32px;
   }
 
-  .Careers .c-page-coverimage {
+  .careers .c-page-coverimage {
     z-index: -5;
     position: absolute;
     filter: opacity(0.5);
@@ -2846,11 +2846,11 @@ body.contact a.contact:link {
   width: 35rem;
 }
 
-.Services .page-header-description p, .about .page-header-description p {
+.services .page-header-description p, .about .page-header-description p {
   width: 90%;
 }
 
-.Services .c-page-header,
+.services .c-page-header,
 .industries .c-page-header {
   margin-bottom: 6rem;
 }
@@ -2897,7 +2897,7 @@ body.contact a.contact:link {
     width: 100%;
   }
 
-  .Careers > .c-page-header {
+  .careers > .c-page-header {
     margin-bottom: 8rem;
   }
 
@@ -2949,7 +2949,7 @@ body.contact a.contact:link {
     margin-bottom: 1rem;
   }
 
-  .Services .c-page-header,
+  .services .c-page-header,
 .industries .c-page-header {
     margin-bottom: 3rem;
   }
@@ -2966,7 +2966,7 @@ body.contact a.contact:link {
   }
 }
 @media screen and (max-width: 959px) {
-  .Services .c-page-header,
+  .services .c-page-header,
 .industries .c-page-header {
     margin-bottom: 32px;
   }
@@ -2987,7 +2987,7 @@ body.contact a.contact:link {
 }
 
 @media screen and (max-width: 600px) {
-  .Careers .c-page-header-stripe {
+  .careers .c-page-header-stripe {
     border-bottom: 7px solid white;
   }
 }
@@ -3305,13 +3305,13 @@ body.contact a.contact:link {
     grid-row: 14/span 22;
   }
 }
-.Careers .c-vacatures__heading {
+.careers .c-vacatures__heading {
   color: #313131;
   width: 100%;
   max-width: 100%;
   margin-bottom: 1.5rem;
 }
-.Careers .c-vacatures {
+.careers .c-vacatures {
   width: 100%;
   max-width: 709px;
   margin-bottom: 5rem;

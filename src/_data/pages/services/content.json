@@ -1,0 +1,46 @@
+{
+    "list": [{
+            "title": "Development",
+            "description": "De juiste technologie voor de juiste context. Wij bouwen samen met jullie een product gericht op de toekomst.",
+            "listItems": [
+                "Software Engineering",
+                "Proven Technology",
+                "Web Application",
+                "Online Platforms",
+                "Apps"
+            ]
+        },
+        {
+            "title": "Design",
+            "description": "Van idee naar ontwerp, van schets naar interactief prototype. Wij vertalen de gebruikersbehoeften naar een gefundeerde digitale experience.",
+            "listItems": [
+                "Service Design",
+                "Design Systems",
+                "Product Design",
+                "User Research",
+                "Design Sprints"
+            ]
+        },
+        {
+            "title": "Research",
+            "description": "Zonder gedegen onderzoek, geen eindproduct. Een samenhang van onderzoek, data en een goed oog voor gebruiksvriendelijkheid.",
+            "listItems": [
+                "Data Science (Advisory)",
+                "Benchmark & Competitor Analysis",
+                "Market Research",
+                "UX Research",
+                "User- en Employee Journeys"
+            ]
+        },
+        {
+            "title": "Security & Privacy",
+            "description": "We doen het veilig of je doen het niet. Maar dat kan ook niet anders als ISO gecertificeerde agency.",
+            "listItems": [
+                "Encryption Advisory",
+                "Pen Testing",
+                "Laws & Regulations(ISO27001)",
+                "GDPR Advisory"
+            ]
+        }
+    ]
+}
