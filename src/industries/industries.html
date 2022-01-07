@@ -3,7 +3,7 @@ layout: templates/_detailPage.html
 title: Industries
 breadcrumbs: [{ name: "Home", link: "/" }, { name: "Industries", link: "/industries/"}]
 pageHeaderStripe: 'add'
-pageName: 'Industries'
+pageName: 'industries'
 pageTitle: Industries
 pageTitleMobile: Industries
 pageDescription: Samen werken aan een betere, slimmere toekomst door middel van design.
@@ -13,8 +13,13 @@ text: "Neem contact met ons op",
 link: "/contact/"}
 
 ---
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
 <section class="c-lists">
-  {% include "organisms/_lists.html" %}
+  {{ component('organisms', '_lists', {
+    list: pages[pageName].content.list
+  }) }}
+
   {% include "atoms/_pageContentImage.html" %}
 </section>
 {% include "organisms/_maatwerkOplossingen.html" %}

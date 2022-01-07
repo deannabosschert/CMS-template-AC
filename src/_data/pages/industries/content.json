@@ -1,0 +1,47 @@
+{
+    "list": [{
+            "title": "Life Sciences & Health Care",
+            "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
+            "listItems": [
+                "Automatic tumor segmentation tool",
+                "Visual patient data analytics software",
+                "Online patient collaboration portal",
+                "MRI Data visualisation",
+                "Computational biology for oncology"
+            ],
+            "callToAction": {
+                "text": "meer over Life Sciences & Health Care",
+                "link": "/industries/lifesciencesandhealthcare"
+            }
+        },
+        {
+            "title": "Energy, Resources & Industrials",
+            "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
+            "listItems": [
+                "Industrial Products & Construction",
+                "Mining & Metals",
+                "Oil, Gas & Chemicals",
+                "Power, Utilities & Renewables",
+                "Future of Energy"
+            ],
+            "callToAction": {
+                "text": "meer over Energy, Resources & Industrials",
+                "link": "/industries/energyresourcesandindustrials"
+            }
+        },
+        {
+            "title": "Consumer",
+            "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
+            "listItems": [
+                "Automotive",
+                "Consumer Products",
+                "Retail, Wholesale & Distribution",
+                "Transportation, Hospitality & Services"
+            ],
+            "callToAction": {
+                "text": "meer over Consumer",
+                "link": "/industries/consumer"
+            }
+        }
+    ]
+}

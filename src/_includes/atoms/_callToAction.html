@@ -1,3 +1,7 @@
 {% if content.callToAction %}
     <a class="c-cta" href="{{content.callToAction.link}}">{{ content.callToAction.text}}</a>
 {% endif %}
+
+{% if params.text %}
+    <a class="c-cta" href="{{params.link}}">{{ params.text}}</a>
+{% endif %}

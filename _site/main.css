@@ -1881,7 +1881,7 @@ img {
 
 body.Home a.home:link,
 body.Services a.services:link,
-body.Industries a.industries:link,
+body.industries a.industries:link,
 body.Cases a.cases:link,
 body.about a.about:link,
 body.Careers a.careers:link,
@@ -2304,13 +2304,13 @@ body.contact a.contact:link {
 .Services .c-lists h3,
 .Services .c-lists a,
 .Services .c-lists ul li,
-.Industries .c-lists h3,
-.Industries .c-lists a,
-.Industries .c-lists ul li {
+.industries .c-lists h3,
+.industries .c-lists a,
+.industries .c-lists ul li {
   color: #313131;
 }
 
-.Industries .c-lists ul {
+.industries .c-lists ul {
   margin-bottom: 1.5rem;
 }
 
@@ -2324,14 +2324,14 @@ body.contact a.contact:link {
 @media screen and (max-width: 690px) {
   body > main .c-lists,
 .Services > main .c-lists,
-.Industries > main .c-lists,
+.industries > main .c-lists,
 .Careers > main .c-lists {
     grid-template-columns: 1fr;
     grid-gap: 64px;
   }
   body > main .c-lists img,
 .Services > main .c-lists img,
-.Industries > main .c-lists img,
+.industries > main .c-lists img,
 .Careers > main .c-lists img {
     padding: 0;
   }
@@ -2683,7 +2683,7 @@ body.contact a.contact:link {
   margin-left: 0.5rem;
 }
 
-.Industries .detailPage .content .c-other-cases .other-cases__heading {
+.industries .detailPage .content .c-other-cases .other-cases__heading {
   font-size: 0;
   line-height: 0;
 }
@@ -2800,7 +2800,7 @@ body.contact a.contact:link {
     margin: 0;
   }
 }
-.Industries .c-page-coverimage {
+.industries .c-page-coverimage {
   object-position: bottom;
   background: none;
 }
@@ -2851,7 +2851,7 @@ body.contact a.contact:link {
 }
 
 .Services .c-page-header,
-.Industries .c-page-header {
+.industries .c-page-header {
   margin-bottom: 6rem;
 }
 
@@ -2950,7 +2950,7 @@ body.contact a.contact:link {
   }
 
   .Services .c-page-header,
-.Industries .c-page-header {
+.industries .c-page-header {
     margin-bottom: 3rem;
   }
 }
@@ -2967,7 +2967,7 @@ body.contact a.contact:link {
 }
 @media screen and (max-width: 959px) {
   .Services .c-page-header,
-.Industries .c-page-header {
+.industries .c-page-header {
     margin-bottom: 32px;
   }
 }

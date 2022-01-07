@@ -1,18 +1,24 @@
 <article class="c-listItem">
-    {% if params.id %}
-    <h3 class="listItem__heading"><span class="listItem__heading__id">{{ params.id }}</span>{{ params.title }}</h3>
-    {% else %}
-    <h3 class="listItem__heading">{{ params.title }}</h3>
-    {% endif%}
-  
-    <p class="listItem__description">{{ params.description }}</p>
-    {% include "atoms/_listHeader.html" %}
-    {% if params.listItems %}
-    <ul class="listItem__list">
-      {% for listItem in params.listItems %}
-      <li class="listItem__list__listItem">{{ listItem }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    {% include "atoms/_callToAction.html" %}
-  </article>
+  {% if params.id %}
+  <h3 class="listItem__heading"><span class="listItem__heading__id">{{ params.id }}</span>{{ params.title }}</h3>
+  {% else %}
+  <h3 class="listItem__heading">{{ params.title }}</h3>
+  {% endif%}
+
+  <p class="listItem__description">{{ params.description }}</p>
+  {% include "atoms/_listHeader.html" %}
+  {% if params.listItems %}
+  <ul class="listItem__list">
+    {% for listItem in params.listItems %}
+    <li class="listItem__list__listItem">{{ listItem }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if params.cta %}
+  {{ component('atoms', '_callToAction', {
+  text: params.cta.text,
+  link: params.cta.link 
+}) }}
+  {% endif %}
+</article>
