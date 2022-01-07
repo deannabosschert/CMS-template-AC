@@ -80,6 +80,30 @@ collections:
               - {label: ID, name: "id", widget: "hidden"}
               - {label: Title, name: "title", widget: string}
               - {label: Description, name: "description", widget: string}
+  - label: "Industries Page"
+    name: "industries"
+    preview_path: "https://activecollective-netlify.netlify.app/industries/"
+    files:
+      - label: "Industries list"
+        name: "list"
+        file: "src/_data/pages/industries/content.json"
+        fields:
+          - label: "Manifesto"
+            name: "list"
+            widget: "list"
+            create: true
+            collapsed: false
+            fields:
+              - {label: Title, name: "title", widget: string}
+              - {label: Description, name: "description", widget: text}
+              - {label: List items, name: "listItems", widget: list}
+              - label: "Call to Action"
+                name: "callToAction"
+                widget: "object"
+                fields:
+                  - {label: Text, name: "text", widget: string}
+                  - {label: Link, name: "link", widget: string}
+                
   - label: "Posts"
     name: posts
     folder: "src/posts"
