@@ -4,10 +4,13 @@ title: Careers
 breadcrumbs: [{ name: "Home", link: "/" }, { name: "Careers", link: "/careers/"}]
 logoColorSwitch: 'true'
 pageHeaderStripe: 'add'
-pageName: 'Careers'
+pageName: 'careers'
 pageTitle: Klaar voor een nieuwe uitdaging?
 pageTitleMobile: Klaar voor een nieuwe uitdaging?
 ---
+
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
 <section class="c-content">
   <p class="content__text">Active Collective is een digitaal productiebedrijf bestaande uit creatieve developers, ontwerpers en jong talent,
     gericht op het ontwerpen, valideren en ontwikkelen van digitale oplossingen. Dit doen we door creatieve
@@ -26,5 +29,7 @@ pageTitleMobile: Klaar voor een nieuwe uitdaging?
 {% include "atoms/_pageContentVideo.html" %}
 <section class="c-vacatures">
   <h2 class="c-vacatures__heading">Vacatures</h2>
-  {% include "organisms/_lists.html" %}
+  {{ component('organisms', '_lists', {
+    list: pages[pageName].content.list
+  }) }}
 </section>

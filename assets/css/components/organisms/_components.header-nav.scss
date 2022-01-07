@@ -32,11 +32,11 @@
 }
 
 body.Home a.home:link,
-body.Services a.services:link,
+body.services a.services:link,
 body.industries a.industries:link,
 body.Cases a.cases:link,
 body.about a.about:link,
-body.Careers a.careers:link,
+body.careers a.careers:link,
 body.contact a.contact:link {
   // color: $color-black;
   text-decoration: underline;
@@ -243,7 +243,7 @@ body.contact a.contact:link {
 }
 
 @media screen and (max-width: 600px) {
-  .Careers {
+  .careers {
     .header-nav__logoColorSwitch u-text-invisible, .header-nav__logoColorSwitch__img {
       display: block;
     }

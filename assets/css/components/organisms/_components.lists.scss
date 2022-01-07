@@ -120,7 +120,7 @@
   }
 }
 
-.Services,
+.services,
 .industries {
   .c-lists {
 
@@ -151,9 +151,9 @@
 @media screen and (max-width: 690px) {
 
   body,
-  .Services,
+  .services,
   .industries,
-  .Careers {
+  .careers {
     >main {
       .c-lists {
         grid-template-columns: 1fr;
