@@ -1,27 +1,18 @@
 ---
-layout: templates/_nieuwsArtikel.html
-title: Warschau
-breadcrumbs: [{ name: "Home", link: "/" }, { name: "Nieuws", link: "/nieuws/"}, { name: "Warschau toont zijn ware...",
-link: "/nieuws/warschau"}]
-pageName: 'warschau'
-pageTitle: 'Warschau toont zijn ware kracht en innovatie'
-pageTitleMobile: 'Warschau toont zijn ware kracht en innovatie'
-pageDescription: 'Leerzame reisjes die de verborgen geheimen van Europese steden blootleggen, die op uniek cultureel en
-technologisch vlak ontwikkelingen doormaken.'
-pageDescriptionMobile: 'Leerzame reisjes die de verborgen geheimen van Europese steden blootleggen, die op uniek
-cultureel en
-technologisch vlak ontwikkelingen doormaken.'
+title: Polen
+breadcrumbs: [{ name: "Home", link: "/" }, { name: "Nieuws", link: "/nieuws/"}, { name: "Polen toont zijn ware...",
+link: "/nieuws/polen"}]
+pageName: 'polen'
 auteur: 'Raymond Martens'
 minutesRead: 4
-otherArticles: ['healthcare', 'warschau', 'digitalisering']
-tag: 'nieuws'
-alineas: [[{
+otherArticles: ['healthcare', 'polen', 'digitalisering']
+content: [[{
 text: 'Zoals sommigen van jullie misschien weten, vergezel ik jaarlijks een groep
 studenten van Amsterdam University of
 Applied Sciences op studiereis. Een grote eer om met studenten van de studie Communication and Multimedia Design
-(CMD) mee te gaan. Dit jaar stond de Poolse hoofdstad Warschau op het programma.'
+(CMD) mee te gaan. Dit jaar stond de Poolse hoofdstad Polen op het programma.'
 }, {
-text: 'Een beeld van Warschau had ik niet echt. En Polen... tsja, sterk in landbouw?
+text: 'Een beeld van Polen had ik niet echt. En Polen... tsja, sterk in landbouw?
 En ik dacht dat wodka daar
 oorspronkelijk vandaan komt. Ik realiseer me dat mijn beeldvorming volledig gebaseerd is op een handvol ervaringen
 met een select groepje Poolse staatsburgers. Meestal vrachtwagenchauffeurs en gastarbeiders. Ik schaamde mij dan
@@ -60,17 +51,17 @@ Periodiek worden er ook leuke winacties aangeboden. Hierdoor is meer informatie-
 maar
 ook successen en verhalen worden actief met elkaar gedeeld.'
 }],[{
-heading: 'Enfin, Warschau dus.',
+heading: 'Enfin, Polen dus.',
 text: 'Wat een wereldstad; wat een historie; en nogmaals, wat een onwetendheid van
 mijn kant. Ondanks het ongelofelijke
 leed van voorgaande generaties, toont men aldaar een onverschrokken wilskracht om het land weer op te bouwen. Ik
-had echt geen idee dat de Tweede Wereldoorlog en het communisme Warschau letterlijk en figuurlijk tot op het bot
+had echt geen idee dat de Tweede Wereldoorlog en het communisme Polen letterlijk en figuurlijk tot op het bot
 hadden afgebroken. En dat Polen slechts 30-jaar een democratie kent. De stad, cultuur en mensen hebben een diepe
 indruk achtergelaten.'
 }, {
 text: 'Zó, lekker luchtig stukje dit..!'
 }, {
-text: 'Reden voor de studievereniging om voor Warschau te kiezen snap ik inmiddels
+text: 'Reden voor de studievereniging om voor Polen te kiezen snap ik inmiddels
 volledig. De verdeeldheid in de stad,
 het behoudende karakter van 1,7 miljoen inwoners. En aan de andere kant megadigitale innovatie in de publieke en
 private sector. Zo trekt de overheid komende jaren 2,2 biljoen euro uit om als serviceverlener digitaler te
@@ -80,9 +71,9 @@ of Digital Affairs... zo een ministerie gun ik Nederland ook wel toe.'
 text: 'Innovatie in de publieke sector wordt gedragen door belastingcentjes, plus wat
 steun van de EU. Maar hoe zit het
 met de private sector? Nou, even indrukwekkend dus. De diepgang en het hoogstaande niveau van digitale strategie,
-duurzaam design en technologische innovatie is bij veel bedrijven in Warschau zeer indrukwekkend.'
+duurzaam design en technologische innovatie is bij veel bedrijven in Polen zeer indrukwekkend.'
 }, {
-text: 'Aardig wat West-Europese multinationals kiezen er dan ook voor om in Warschau
+text: 'Aardig wat West-Europese multinationals kiezen er dan ook voor om in Polen
 een vestiging te openen en hier
 een deel van hun digitale ontwikkeling te laten plaatsvinden. Voorheen gedreven door lagere arbeidskosten, maar
 hier komt snel verandering in. Het schoolverlatend talent en sterke intrinsieke gedrevenheid voor technologische
@@ -96,43 +87,45 @@ Polen is going digital. And fast!'
 }, {
 text: 'Na zdrowie!'
 }, {
-text: 'Raymond vanuit Warschau.'
+text: 'Raymond vanuit Polen.'
 }
 ]]
 ---
-<section class="c-blogpost">
-  <article class="blogpost__article">
-    {% for alinea in alineas[0] %}
-    {% if alinea.heading %}
-      <h2 class="blogpost__title">{{ alinea.heading }}</h2>
-    {% endif %}
-    {% if alinea.text %}
-      <p class="blogpost__article__text">{{ alinea.text }}</p>
-    {% endif %}
-    {% endfor %}
-  </article>
-  {% include "atoms/_pageContentImage.html" %}
-  <article class="blogpost__article">
-    {% for alinea in alineas[1] %}
-    {% if alinea.heading %}
-      <h2 class="blogpost__title">{{ alinea.heading }}</h2>
-    {% endif %}
-    {% if alinea.text %}
-      <p class="blogpost__article__text">{{ alinea.text }}</p>
-    {% endif %}
-    {% endfor %}
-  </article>
-  <img class="blogpost__img" src="/assets/img/article_images/warschau_ministry.jpg"
-    alt="photograph taken on the Warsaw trip in a meeting room in which we had met with the Polish Ministry of Digital Affairs"
-    width="707.64" height="300">
-    <article class="blogpost__article">
-      {% for alinea in alineas[2] %}
-      {% if alinea.heading %}
-        <h2 class="blogpost__title">{{ alinea.heading }}</h2>
-      {% endif %}
-      {% if alinea.text %}
-        <p class="blogpost__article__text">{{ alinea.text }}</p>
-      {% endif %}
-      {% endfor %}
-    </article>
-</section>
+
+{% for contentBlock in content[0] %}
+{% if contentBlock.heading %}
+
+{{ contentBlock.heading }}
+
+
+{% endif %} {% if contentBlock.text %}
+
+{{ contentBlock.text }}
+
+{% endif %} {% endfor %}
+
+<img class="c-page-contentImage" src="/assets/img/article_images/polen_content.jpg" alt="photograph taken on the Warsaw trip in which the whole group is sitting at a large restaurant table looking at the menu's for dinner" width="707.64" height="300">
+
+{% for contentBlock in content[1] %} {% if contentBlock.heading %}
+
+{{ contentBlock.heading }}
+--------------------
+
+{% endif %} {% if contentBlock.text %}
+
+{{ contentBlock.text }}
+
+{% endif %} {% endfor %}
+
+![photograph taken on the Warsaw trip in a meeting room in which we had met with the Polish Ministry of Digital Affairs](/assets/img/article_images/polen_ministry.jpg)
+
+{% for contentBlock in content[2] %} {% if contentBlock.heading %}
+
+{{ contentBlock.heading }}
+--------------------
+
+{% endif %} {% if contentBlock.text %}
+
+{{ contentBlock.text }}
+
+{% endif %} {% endfor %}

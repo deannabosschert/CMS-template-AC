@@ -4,18 +4,11 @@ title: Warschau
 breadcrumbs: [{ name: "Home", link: "/" }, { name: "Nieuws", link: "/nieuws/"}, { name: "Warschau toont zijn ware...",
 link: "/nieuws/warschau"}]
 pageName: 'warschau'
-pageTitle: 'Warschau toont zijn ware kracht en innovatie'
-pageTitleMobile: 'Warschau toont zijn ware kracht en innovatie'
-pageDescription: 'Leerzame reisjes die de verborgen geheimen van Europese steden blootleggen, die op uniek cultureel en
-technologisch vlak ontwikkelingen doormaken.'
-pageDescriptionMobile: 'Leerzame reisjes die de verborgen geheimen van Europese steden blootleggen, die op uniek
-cultureel en
-technologisch vlak ontwikkelingen doormaken.'
 auteur: 'Raymond Martens'
 minutesRead: 4
 otherArticles: ['healthcare', 'warschau', 'digitalisering']
-tag: 'nieuws'
-alineas: [[{
+tag: 'posts'
+content: [[{
 text: 'Zoals sommigen van jullie misschien weten, vergezel ik jaarlijks een groep
 studenten van Amsterdam University of
 Applied Sciences op studiereis. Een grote eer om met studenten van de studie Communication and Multimedia Design
@@ -102,23 +95,23 @@ text: 'Raymond vanuit Warschau.'
 ---
 <section class="c-blogpost">
   <article class="blogpost__article">
-    {% for alinea in alineas[0] %}
-    {% if alinea.heading %}
-      <h2 class="blogpost__title">{{ alinea.heading }}</h2>
+    {% for contentBlock in content[0] %}
+    {% if contentBlock.heading %}
+      <h2 class="blogpost__title">{{ contentBlock.heading }}</h2>
     {% endif %}
-    {% if alinea.text %}
-      <p class="blogpost__article__text">{{ alinea.text }}</p>
+    {% if contentBlock.text %}
+      <p class="blogpost__article__text">{{ contentBlock.text }}</p>
     {% endif %}
     {% endfor %}
   </article>
   {% include "atoms/_pageContentImage.html" %}
   <article class="blogpost__article">
-    {% for alinea in alineas[1] %}
-    {% if alinea.heading %}
-      <h2 class="blogpost__title">{{ alinea.heading }}</h2>
+    {% for contentBlock in content[1] %}
+    {% if contentBlock.heading %}
+      <h2 class="blogpost__title">{{ contentBlock.heading }}</h2>
     {% endif %}
-    {% if alinea.text %}
-      <p class="blogpost__article__text">{{ alinea.text }}</p>
+    {% if contentBlock.text %}
+      <p class="blogpost__article__text">{{ contentBlock.text }}</p>
     {% endif %}
     {% endfor %}
   </article>
@@ -126,12 +119,12 @@ text: 'Raymond vanuit Warschau.'
     alt="photograph taken on the Warsaw trip in a meeting room in which we had met with the Polish Ministry of Digital Affairs"
     width="707.64" height="300">
     <article class="blogpost__article">
-      {% for alinea in alineas[2] %}
-      {% if alinea.heading %}
-        <h2 class="blogpost__title">{{ alinea.heading }}</h2>
+      {% for contentBlock in content[2] %}
+      {% if contentBlock.heading %}
+        <h2 class="blogpost__title">{{ contentBlock.heading }}</h2>
       {% endif %}
-      {% if alinea.text %}
-        <p class="blogpost__article__text">{{ alinea.text }}</p>
+      {% if contentBlock.text %}
+        <p class="blogpost__article__text">{{ contentBlock.text }}</p>
       {% endif %}
       {% endfor %}
     </article>
