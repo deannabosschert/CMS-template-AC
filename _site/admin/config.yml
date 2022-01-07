@@ -68,7 +68,7 @@ collections:
     name: "about"
     preview_path: "https://activecollective-netlify.netlify.app/about/"
     files:
-      - label: "Values"
+      - label: "Manifesto list"
         name: "list"
         file: "src/_data/pages/about/manifesto.json"
         fields:
