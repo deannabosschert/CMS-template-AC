@@ -1,0 +1,14 @@
+<ul class="social-media-icons">
+    {% for social in  params.socials %}
+    {% set listItem = pages.contact.socials[social] %}
+    <li>
+        {{ component('atoms', '_icon', {
+        link: pages.contact.socials[social],
+        img: 'logos/' + social + '.png',
+        alt: 'logo of ' + social,
+        width: 21,
+        height: 21
+      }) }}
+    </li>
+    {% endfor %}
+</ul>

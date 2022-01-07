@@ -66,6 +66,9 @@
       }
 
       .social-media-icons {
+        display: flex;
+        flex-direction: row;
+        
         img {
           width: auto;
           height: auto;

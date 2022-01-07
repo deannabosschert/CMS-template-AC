@@ -2267,6 +2267,10 @@ body.contact a.contact:link {
   max-width: 90%;
   margin-bottom: 0;
 }
+.contact .contact-wrapper .c-lists .social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
 .contact .contact-wrapper .c-lists .social-media-icons img {
   width: auto;
   height: auto;

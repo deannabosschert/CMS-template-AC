@@ -1,0 +1,7 @@
+{% if params.link %}
+<a href="{{params.link}}" target="_blank" rel="noopener">
+{% endif %}
+    <img src="/assets/img/{{params.img}}" alt="{{params.alt}}" width="{{params.width}}" height="{{params.height}}">
+    {% if params.link %}
+</a>
+{% endif %}

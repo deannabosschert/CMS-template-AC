@@ -6,56 +6,43 @@ pageHeaderStripe: 'add'
 pageName: 'contact'
 pageTitle: 'Contact'
 pageTitleMobile: 'Contact'
-pageDescription: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit
-doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
-pageDescriptionMobile: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen.
-Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
+pageDescription: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
+pageDescriptionMobile: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
 ---
+
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
+
 <h2 class="u-text-invisible">Contactinformatie</h2>
 <div class="contact-wrapper">
   <section class="contact-wrapper__info c-lists">
-    {% for contactInfo in pageContents.Contact %}
+
+    
+
+   
+    
+    {% for info in ['address', 'telephone', 'email', 'jobs', 'legal'] %}
+    {% set listItem = pages[pageName].info[info] %}
     <article class="c-listItem">
-      <h3 class="listItem__heading">{{ contactInfo.title }}</h3>
-      <address class="listItem__address">
-        {{ contactInfo.address | safe }}
-        {% if contactInfo.telephone %}
-        <a class="listItem__address__link" href="tel:{{contactInfo.telephone | trim}}">{{ contactInfo.telephone }}</a>
-        {% endif %}
-        {% if contactInfo.email %}
-        <a class="listItem__address__link" href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a>
-        {% elseif contactInfo.jobsEmail %}
-        <a class="listItem__address__link" href="mailto:{{contactInfo.jobsEmail}}">{{contactInfo.jobsEmail}}</a>
-        {% endif %}
-        {% if contactInfo.kvk %}
-        <p class="listItem__address__text">KVK: {{contactInfo.kvk}}</p>
-        <p class="listItem__address__text">BTW: {{contactInfo.btw}}</p>
-        {% endif %}
-        {% if contactInfo.instagram or contactInfo.facebook or contactInfo.linkedin %}
-        <div class="social-media-icons">
-          {% if contactInfo.instagram  %}
-          <a href="{{contactInfo.instagram}}" target="_blank" rel="noopener">
-            <img src="/assets/img/logos/Instagram.png" alt="logo of Instagram"
-              width="21" height="21">
-          </a>
-          {% endif %}
-          {% if contactInfo.facebook  %}
-          <a href="{{contactInfo.facebook}}" target="_blank" rel="noopener">
-            <img src="/assets/img/logos/Facebook.png" alt="logo of Facebook"
-              width="21" height="21">
-          </a>
-          {% endif %}
-          {% if contactInfo.linkedin  %}
-          <a href="{{contactInfo.linkedin}}" target="_blank" rel="noopener">
-            <img src="/assets/img/logos/LinkedIn.png" alt="logo of LinkedIn"
-              width="21" height="21">
-          </a>
-          {% endif %}
-        </div>
-        {% endif %}
-      </address>
+      {{ component('molecules', '_contactItem', {
+         infoType: info,
+         heading: listItem.heading,
+         data: listItem.data
+      }) }}
+
     </article>
     {% endfor %}
+
+    <article class="c-listItem">
+      <h3 class="listItem__heading">Socials</h3>
+ 
+      {{ component('molecules', '_socialIcons', {
+        socials: ['instagram', 'facebook', 'linkedin']
+      }) }}
+  
+  </article>
+
+
   </section>
   <img class="contact-wrapper__img" src="/assets/img/{{images.team.jesper.src}}.jpg"
     alt="{{images.team.jesper.alt}}" width="{{images.team.jesper.width}}">

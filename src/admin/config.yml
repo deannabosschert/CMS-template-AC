@@ -46,11 +46,16 @@ collections:
             widget: "object"
             fields:
               - {label: Title, name: "heading", widget: string}
-              - {label: KvK, name: "kvk", widget: number}
-              - {label: BTW, name: "btw", widget: string}
+              - label: Data
+                name: "data"
+                widget: "object"
+                fields:
+                - {label: KvK, name: "kvk", widget: number}
+                - {label: BTW, name: "btw", widget: string}
       - label: "Socials"
         name: "socials"
         file: "src/_data/pages/contact/socials.json"
+        widget: 'list'
         fields:
           - {label: Title, name: "title", widget: "hidden"}
           - {label: Instagram URL, name: instagram, widget: string}
