@@ -4,7 +4,8 @@
       "tag": "project picture",
       "link": "/cases/projectpicture/",
       "img": {
-        "src": "case_images/projectPicture",
+        "path": "case_images/projectPicture",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/projectPicture.jpg",
         "alt": "photo of someone looking at the project picture application on a computer screen",
         "width": 1075,
         "height": 450
@@ -15,7 +16,8 @@
       "tag": "lidl",
       "link": "/cases/lidlnl/",
       "img": {
-        "src": "case_images/lidlNL_square",
+        "path": "case_images/lidlNL_square",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/lidlNL_square.jpg",
         "alt": "photo of Lidl employees posing for a group picture, smiling and having happy expressions",
         "width": 527,
         "height": 450
@@ -26,7 +28,8 @@
       "tag": "will&co",
       "link": "/cases/willandco/",
       "img": {
-        "src": "case_images/willAndCo_square",
+        "path": "case_images/willAndCo_square",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/willAndCo_square.jpg",
         "alt": "screen capture of the Will&Co's style guide",
         "width": 527,
         "height": 450
