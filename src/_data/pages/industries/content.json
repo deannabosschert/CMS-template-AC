@@ -1,4 +1,18 @@
 {
+    "images": {
+        "coverImage": {
+          "src": "team/team_meeting",
+          "alt": "photograph of 6 colleagues from different disciplines like security, design, development and project management and such in a meeting room together, working on their macbooks and discussing something ",
+          "width": "1256",
+          "height": "502"
+        },
+        "contentImage": {
+          "src": "team/jesper_rectangle",
+          "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations ",
+          "width": "528",
+          "height": "289"
+        }
+      },
     "list": [{
             "title": "Life Sciences & Health Care",
             "description": "Waardepropositie, klantreis, touchpoints, moment van de waarheid. We ontwerpen diensten die een overtuigend samenhangend geheel vormen.",
@@ -43,5 +57,5 @@
                 "link": "/industries/consumer"
             }
         }
-    ]
+    ]    
 }

@@ -1,5 +1,5 @@
 ---
-title: Polen
+title: Warschau
 breadcrumbs: [{ name: "Home", link: "/" }, { name: "Nieuws", link: "/nieuws/"}, { name: "Polen toont zijn ware...",
 link: "/nieuws/polen"}]
 pageName: 'polen'

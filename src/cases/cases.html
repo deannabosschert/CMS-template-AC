@@ -1,7 +1,7 @@
 ---
 layout: templates/_detailPage.html
 title: 'Cases'
-pageName: 'Cases'
+pageName: 'cases'
 breadcrumbs: [{ name: "Home", link: "/" }, { name: "Cases", link: "/cases/"}]
 pageHeaderStripe: 'add'
 pageTitle: 'Cases'
@@ -10,11 +10,17 @@ pageDescription: 'Samen werken aan een betere, slimmere toekomst door middel van
 pageDescriptionMobile: 'Samen werken aan een betere, slimmere toekomst door middel van design.'
 
 ---
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
 <section class="c-maatwerk-oplossingen-cases">
   <h2 class="u-text-invisible">Cases</h2>
   <div class="c-cases-wrapper cases-wrapper">
     {% for case in showCases %}
-    {% include "molecules/_caseCard.html" %}
+    
+    {{ component('molecules', '_caseCard', {
+      case: pages[pageName].content[case]
+    }) }}
+    
     {% endfor %}
   </div>
 </section>

@@ -651,7 +651,7 @@ body {
   padding: 128px 0;
 }
 
-.maatwerkCasesBackground,
+.maatwerkcasesBackground,
 .blackBackground-wrapper {
   min-width: 100vw;
   width: 100vw;
@@ -700,7 +700,7 @@ footer {
 @media screen and (max-width: 1000px) {
   .backgroundColorBlack,
 .blackBackgroundOtherArticles,
-.blackBackground-wrapper, .maatwerkCasesBackground {
+.blackBackground-wrapper, .maatwerkcasesBackground {
     padding: 64px 28px;
   }
 }
@@ -926,19 +926,19 @@ img {
   margin-left: 0.5rem;
 }
 
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles {
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles {
   display: flex;
   flex-direction: column;
 }
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article:first-child .article__header {
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article:first-child .article__header {
   bottom: 2rem;
 }
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header {
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header {
   display: flex;
   flex-direction: column;
 }
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header__cta,
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header__heading {
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header__cta,
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header__heading {
   order: 2;
   bottom: 0;
   min-width: 100%;
@@ -946,7 +946,7 @@ img {
   max-width: 100%;
   position: unset;
 }
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header__tag {
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles .c-article .article__header__tag {
   order: 1;
   width: 100%;
   max-width: 100%;
@@ -965,14 +965,14 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.Nieuws .article__header__heading {
+.nieuws .article__header__heading {
   font-size: 28px;
   line-height: 36px;
   color: #313131;
 }
 
 @media screen and (min-width: 600px) {
-  .Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles {
+  .nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-articles {
     display: grid;
   }
 }
@@ -1114,16 +1114,16 @@ img {
   text-transform: uppercase;
 }
 
-.Cases .c-case-card {
+.cases .c-case-card {
   color: #313131;
 }
-.Cases .c-case-card:first-child .case-card__header,
-.Cases .c-case-card:first-child .case-card__header__heading,
-.Cases .c-case-card:first-child .case-card__cta {
+.cases .c-case-card:first-child .case-card__header,
+.cases .c-case-card:first-child .case-card__header__heading,
+.cases .c-case-card:first-child .case-card__cta {
   color: #FFFFFF;
 }
-.Cases .c-case-card .case-card__header__heading,
-.Cases .c-case-card .case-card__cta {
+.cases .c-case-card .case-card__header__heading,
+.cases .c-case-card .case-card__cta {
   color: #313131;
 }
 
@@ -1227,10 +1227,10 @@ img {
   filter: none;
 }
 
-.Nieuws .c-cases-wrapper article {
+.nieuws .c-cases-wrapper article {
   min-width: 48%;
 }
-.Nieuws .c-cases-wrapper article:first-child {
+.nieuws .c-cases-wrapper article:first-child {
   min-width: 100%;
 }
 
@@ -1250,25 +1250,25 @@ img {
     margin-bottom: 1rem;
   }
 
-  .Cases .c-maatwerk-oplossingen-cases .cases-wrapper .c-case-card header p,
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-case-card header p {
+  .cases .c-maatwerk-oplossingen-cases .cases-wrapper .c-case-card header p,
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper .c-case-card header p {
     margin-top: 0;
   }
-  .Cases .c-maatwerk-oplossingen-cases .cases-wrapper article,
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article {
+  .cases .c-maatwerk-oplossingen-cases .cases-wrapper article,
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article {
     margin-bottom: 1.5rem;
   }
-  .Cases .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child,
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child {
+  .cases .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child,
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child {
     padding: 0rem;
     margin-bottom: 0;
   }
-  .Cases .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child header,
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child header {
+  .cases .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child header,
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child header {
     bottom: 4rem;
   }
-  .Cases .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child .cardLink,
-.Nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child .cardLink {
+  .cases .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child .cardLink,
+.nieuws .c-maatwerk-oplossingen-cases .cases-wrapper article:first-child .cardLink {
     padding-left: 1.5rem;
     padding-top: 25rem;
     padding-bottom: 2rem;
@@ -1282,11 +1282,11 @@ img {
   }
 }
 @media screen and (min-width: 1078px) {
-  .Nieuws .c-cases-wrapper article {
+  .nieuws .c-cases-wrapper article {
     width: 527px;
     height: 618px;
   }
-  .Nieuws .c-cases-wrapper article:first-child {
+  .nieuws .c-cases-wrapper article:first-child {
     width: 1078px;
     height: 450px;
   }
@@ -1882,7 +1882,7 @@ img {
 body.Home a.home:link,
 body.services a.services:link,
 body.industries a.industries:link,
-body.Cases a.cases:link,
+body.cases a.cases:link,
 body.about a.about:link,
 body.careers a.careers:link,
 body.contact a.contact:link {
@@ -2499,40 +2499,40 @@ body.contact a.contact:link {
   margin-left: 0.5rem;
 }
 
-.Nieuws .c-maatwerk-oplossingen-cases article:first-child h3,
-.Nieuws .c-maatwerk-oplossingen-cases article:first-child a {
+.nieuws .c-maatwerk-oplossingen-cases article:first-child h3,
+.nieuws .c-maatwerk-oplossingen-cases article:first-child a {
   color: #FFFFFF;
 }
-.Nieuws .c-maatwerk-oplossingen-cases h3,
-.Nieuws .c-maatwerk-oplossingen-cases a {
+.nieuws .c-maatwerk-oplossingen-cases h3,
+.nieuws .c-maatwerk-oplossingen-cases a {
   color: #313131;
 }
 
-.Nieuws .c-maatwerk-oplossingen-cases {
+.nieuws .c-maatwerk-oplossingen-cases {
   background-color: inherit;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.Nieuws .c-maatwerk-oplossingen-cases article:first-child img {
+.nieuws .c-maatwerk-oplossingen-cases article:first-child img {
   filter: brightness(60%);
 }
-.Nieuws .c-maatwerk-oplossingen-cases header {
+.nieuws .c-maatwerk-oplossingen-cases header {
   bottom: 2rem;
   max-width: 100%;
 }
-.Nieuws .c-maatwerk-oplossingen-cases p {
+.nieuws .c-maatwerk-oplossingen-cases p {
   order: 1;
 }
-.Nieuws .c-maatwerk-oplossingen-cases h3 {
+.nieuws .c-maatwerk-oplossingen-cases h3 {
   order: 2;
 }
-.Nieuws .c-maatwerk-oplossingen-cases a {
+.nieuws .c-maatwerk-oplossingen-cases a {
   order: 3;
 }
 
-.Cases .c-maatwerk-oplossingen-cases,
-.Nieuws .c-maatwerk-oplossingen-cases {
+.cases .c-maatwerk-oplossingen-cases,
+.nieuws .c-maatwerk-oplossingen-cases {
   background-color: inherit;
   padding-top: 0;
   padding-bottom: 0;
@@ -2945,7 +2945,7 @@ body.contact a.contact:link {
     margin-bottom: 1.5rem;
   }
 
-  .Cases .c-page-header, .Nieuws .c-page-header {
+  .cases .c-page-header, .nieuws .c-page-header {
     margin-bottom: 1rem;
   }
 

@@ -2,7 +2,29 @@
 layout: templates/_base.html
 pageType: 'detailPage'
 ---
+{%- from "system/component.njk" import component -%}
+<!-- todo: figure out to put this in _base layout-->
+
 {% include "sections/_pageHeader.html" %}
-{% include "atoms/_pageCoverImage.html" %}
+
+{% if parent %}
+{{ component('atoms', '_pageCoverImage', {
+src: pages[parent].item[pageName].images.coverImage.src,
+alt: pages[parent].item[pageName].images.coverImage.alt,
+width: pages[parent].item[pageName].images.coverImage.width,
+height: pages[parent].item[pageName].images.coverImage.height,
+source: pages[parent].item[pageName].images
+}) }}
+
+{% else %}
+{{ component('atoms', '_pageCoverImage', {
+    src: pages[pageName].images.coverImage.src,
+    alt: pages[pageName].images.coverImage.alt,
+    width: pages[pageName].images.coverImage.width,
+    height: pages[pageName].images.coverImage.height
+  }) }}
+
+{% endif %}
+
 {{ content | safe }}
 {% include "molecules/_raymond.html" %}

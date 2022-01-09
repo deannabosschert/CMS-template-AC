@@ -1,0 +1,16 @@
+{
+    "coverImage": {
+        "path": "team/team_meeting_clients",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/team/team_meeting_clients.jpg",
+        "alt": "photograph of the Active Collective team in a meeting with a client",
+        "width": "1441",
+        "height": "502"
+    },
+    "contentVideo": {
+        "path": "case_images/projectPicture",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/projectPicture.mp4",
+        "alt": "video of Ingeborg talking about Project Picture",
+        "width": "709",
+        "height": "401"
+    }
+}

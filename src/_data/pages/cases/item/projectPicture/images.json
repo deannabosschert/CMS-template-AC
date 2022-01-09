@@ -1,0 +1,9 @@
+{
+  "coverImage": {
+      "path": "case_images/projectPicture",
+      "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/projectPicture.jpg",
+      "alt": "photo of someone looking at the project picture application on a computer screen",
+      "width": 1075,
+      "height": 450
+    }
+}

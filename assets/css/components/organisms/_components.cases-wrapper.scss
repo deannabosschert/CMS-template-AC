@@ -80,7 +80,7 @@
   }
 }
 
-.Nieuws .c-cases-wrapper article {
+.nieuws .c-cases-wrapper article {
   // width: 527px;
   // height: 618px;
   min-width: 48%;
@@ -111,8 +111,8 @@
     }
   }
 
-  .Cases,
-  .Nieuws {
+  .cases,
+  .nieuws {
     .c-maatwerk-oplossingen-cases .cases-wrapper {
       .c-case-card header p {
         margin-top: 0;
@@ -148,7 +148,7 @@
 }
 
 @media screen and (min-width: 1078px) {
-  .Nieuws .c-cases-wrapper article {
+  .nieuws .c-cases-wrapper article {
     width: 527px;
     height: 618px;
   

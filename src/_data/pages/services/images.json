@@ -1,0 +1,9 @@
+ {
+     "contentImage": {
+         "path": "team/jesper_rectangle",
+         "src": "https://activecollective-netlify.netlify.app/assets/img/team/jesper_rectangle.jpg",
+         "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations ",
+         "width": "528",
+         "height": "289"
+     }
+ }

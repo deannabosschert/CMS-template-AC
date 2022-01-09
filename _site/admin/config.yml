@@ -84,11 +84,37 @@ collections:
     name: "industries"
     preview_path: "https://activecollective-netlify.netlify.app/industries/"
     files:
+      - label: "Images"
+        name: "images"
+        file: "src/_data/pages/industries/images.json"
+        widget: "list"
+        create: true
+        collapsed: false
+        fields:
+          - label: "Cover image"
+            name: "coverImage"
+            widget: "object"
+            fields:
+              - label: Image
+                name: "src"
+                widget: "image"
+                default: "https://activecollective-netlify.netlify.app/assets/img/{{src}}.jpg"
+              - {label: Width, name: "width", widget: number}
+              - {label: Height, name: "height", widget: number}
+              - {label: Alt-text, name: "alt", widget: string}
+          - label: "Content image"
+            name: "contentImage"
+            widget: "object"
+            fields:
+              - {label: Image, name: "src", widget: image}
+              - {label: Width, name: "width", widget: number}
+              - {label: Height, name: "height", widget: number}
+              - {label: Alt-text, name: "alt", widget: string}
       - label: "Industries list"
         name: "list"
         file: "src/_data/pages/industries/content.json"
         fields:
-          - label: "Industries"
+          - label: "List"
             name: "list"
             widget: "list"
             create: true
@@ -109,10 +135,37 @@ collections:
                 fields:
                   - {label: Text, name: "text", widget: string}
                   - {label: Link, name: "link", widget: string}
+             
   - label: "Services Page"
     name: "Services"
     preview_path: "https://activecollective-netlify.netlify.app/services/"
     files:
+      - label: "Images"
+        name: "images"
+        file: "src/_data/pages/services/images.json"
+        widget: "list"
+        create: true
+        collapsed: false
+        fields:
+          - label: "Cover image"
+            name: "coverImage"
+            widget: "object"
+            fields:
+              - label: Image
+                name: "src"
+                widget: "image"
+                default: "https://activecollective-netlify.netlify.app/assets/img/{{src}}.jpg"
+              - {label: Width, name: "width", widget: number}
+              - {label: Height, name: "height", widget: number}
+              - {label: Alt-text, name: "alt", widget: string}
+          - label: "Content image"
+            name: "contentImage"
+            widget: "object"
+            fields:
+              - {label: Image, name: "src", widget: image}
+              - {label: Width, name: "width", widget: number}
+              - {label: Height, name: "height", widget: number}
+              - {label: Alt-text, name: "alt", widget: string}
       - label: "Services list"
         name: "list"
         file: "src/_data/pages/services/content.json"
@@ -132,6 +185,7 @@ collections:
                 collapsed: false
                 fields:
                   - {label: Text, name: "text", widget: string}
+                  
                 
   - label: "Posts"
     name: posts

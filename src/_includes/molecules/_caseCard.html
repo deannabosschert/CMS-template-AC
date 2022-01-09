@@ -1,9 +1,9 @@
-<article class="c-case-card" href="{{cases[case].link}}">
+<article class="c-case-card" href="{{params.case.link}}">
   <header class="case-card__header">
-    <h3 class="case-card__header__heading">{{ cases[case].title }}</h3>
-    <p class="case-card__header__text">{{ cases[case].tag }}</p>
+    <h3 class="case-card__header__heading">{{ params.case.title }}</h3>
+    <p class="case-card__header__text">{{ params.case.tag }}</p>
   </header>
-  <img class="case-card__img" src="/assets/img/{{cases[case].img.src}}.jpg" alt="{{cases[case].img.alt}}" width="{{cases[case].img.width}}"
-    height="{{cases[case].img.height}}">
-  <a class="case-card__cta" href="{{cases[case].link}}">Bekijk case</a>
+  <img class="case-card__img" src="/assets/img/{{params.case.img.src}}.jpg" alt="{{params.case.img.alt}}" width="{{params.case.img.width}}"
+    height="{{params.case.img.height}}">
+  <a class="case-card__cta" href="{{params.case.link}}">Bekijk case</a>
 </article>

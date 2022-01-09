@@ -20,6 +20,11 @@ link: "/contact/"}
     list: pages[pageName].content.list
   }) }}
 
-  {% include "atoms/_pageContentImage.html" %}
+  {{ component('atoms', '_pageContentImage', {
+    src: pages[pageName].images.contentImage.src,
+    alt: pages[pageName].images.contentImage.alt,
+    width: pages[pageName].images.contentImage.width,
+    height: pages[pageName].images.contentImage.height
+  }) }}
 </section>
 {% include "organisms/_maatwerkOplossingen.html" %}

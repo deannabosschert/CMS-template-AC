@@ -1,0 +1,45 @@
+{
+    "team": {
+        "meeting": {
+            "src": "team/team_meeting",
+            "alt": "photograph of 6 colleagues from different disciplines like security, design, development and project management and such in a meeting room together, working on their macbooks and discussing something ",
+            "width": "1256",
+            "height": "502"
+        },
+        "meeting_clients": {
+            "src": "team/team_meeting_clients",
+            "alt": "photograph of the Active Collective team in a meeting with a client",
+            "width": "1441",
+            "height": "502"
+        },
+        "jesper": {
+            "src": "team/jesper_rectangle",
+            "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations",
+            "width": "528",
+            "height": "289"
+        },
+        "raymond": {
+            "src": "team/raymond",
+            "alt": "photograph of founder Raymond Martens",
+            "width": "347",
+            "height": "336"
+        },
+        "portraits": [{
+                "name": "Jesper",
+                "imgAlt": "has a beard, wears glasses and a brown jumper with white stripes and is posing with his arms crossed"
+            },
+            {
+                "name": "Jorrit",
+                "imgAlt": "wears a cotton-flannel mixed shirt and is posing with his arms crossed"
+            },
+            {
+                "name": "Britt",
+                "imgAlt": "wears a black beret hat and black turtleneck with gold jewellery and is posing with her arms crossed"
+            },
+            {
+                "name": "Bas",
+                "imgAlt": "wears a dark blue shirt, has a toy NERF-gun in his hand and is posing by pointing it at the camera"
+            }
+        ]
+    }
+}

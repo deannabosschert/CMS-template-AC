@@ -1,0 +1,16 @@
+{
+    "coverImage": {
+        "path": "team/team_meeting",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/team/team_meeting.jpg",
+        "alt": "photograph of 6 colleagues from different disciplines like security, design, development and project management and such in a meeting room together, working on their macbooks and discussing something ",
+        "width": "1256",
+        "height": "502"
+    },
+    "contentImage": {
+        "path": "team/jesper_rectangle",
+        "src": "https://activecollective-netlify.netlify.app/assets/img/team/jesper_rectangle.jpg",
+        "alt": "photograph of our developer Jesper pointing at his computer screen, which shows a dashboard of datavisualizations ",
+        "width": "528",
+        "height": "289"
+    }
+}

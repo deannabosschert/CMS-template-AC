@@ -1,0 +1,44 @@
+{
+    "digitalisering": {
+        "coverImage": {
+            "src": "article_images/digitalisering",
+            "alt": "graph illustrating the potentials of digitalizing health care",
+            "width": "1259",
+            "height": "502"
+        },
+        "contentImage": {
+            "src": "article_images/digitalisering_content",
+            "alt": "photograph taken during a pitch or presentation",
+            "width": "709",
+            "height": "401"
+        }
+    },
+    "healthcare": {
+        "coverImage": {
+            "src": "article_images/scan",
+            "alt": "photo of a medical device",
+            "width": "1259",
+            "height": "502"
+        },
+        "contentImage": {
+            "src": "article_images/scan",
+            "alt": "photo of a medical device",
+            "width": "709",
+            "height": "401"
+        }
+    },
+    "warschau": {
+        "coverImage": {
+            "src": "article_images/warschau",
+            "alt": "long exposure photograph of the city of Warsaw in the evening",
+            "width": "1259",
+            "height": "502"
+        },
+        "contentImage": {
+            "src": "article_images/warschau_content",
+            "alt": "photograph taken on the Warsaw trip in which the whole group is sitting at a large restaurant table looking at the menu's for dinner",
+            "width": "707.64",
+            "height": "300"
+        }
+    }
+}

@@ -1,2 +1,6 @@
-<img class="c-page-contentImage" src="/assets/img/{{images[pageName].contentImage.src}}.jpg" alt="{{images[pageName].contentImage.alt}}" width="{{images[pageName].contentImage.width}}" height="{{images[pageName].contentImage.height}}">
+{% if params.class %}
+<img class="{{params.class}}" src="{{params.src}}" alt="{{params.alt}}" width="{{params.width}}" height="{{params.height}}">
+{% else %}
+<img class="c-page-contentImage" src="{{params.src}}" alt="{{params.alt}}" width="{{params.width}}" height="{{params.height}}">
 
+{% endif %}

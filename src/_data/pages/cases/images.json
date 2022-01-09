@@ -1,0 +1,50 @@
+{
+    "lidlNL": {
+        "coverImage": {
+            "path": "case_images/lidlNL",
+            "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/lidlNL.jpg",
+            "alt": "photograph of lidl employees posing for the picture, smiling and looking happy",
+            "width": "1259",
+            "height": "504"
+        },
+        "contentImage": {
+            "path": "case_images/lidlNL_content",
+            "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/lidlNL_content.jpg",
+            "alt": "screenshot showing a few very positive articles about Lidl as an employer, such as Lidl receiving the 'Top Employer 2018'-award and an interview with an employee about his growth at Lidl",
+            "width": "709",
+            "height": "401"
+        }
+    },
+    "projectPicture": {
+        "coverImage": {
+            "path": "case_images/projectPicture",
+            "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/projectPicture.jpg",
+            "alt": "photograph of Project Picture on a computer screen",
+            "width": "1259",
+            "height": "502"
+        },
+        "contentVideo": {
+            "path": "case_images/projectPicture",
+            "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/projectPicture.jpg",
+            "alt": "video of Ingeborg talking about Project Picture",
+            "width": "709",
+            "height": "401"
+        }
+    },
+    "willAndCo": {
+        "coverImage": {
+            "path": "case_images/willAndCo",
+            "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/willAndCo.jpg",
+            "alt": "four photographs grouped together of Will and Co, capturing the ambience of meetings, conferences and team building trips",
+            "width": "1259",
+            "height": "502"
+        },
+        "contentImage": {
+            "path": "case_images/willAndCo_content",
+            "src": "https://activecollective-netlify.netlify.app/assets/img/case_images/willAndCo_content.jpg",
+            "alt": "screen capture of the Will&Co style guide",
+            "width": "709",
+            "height": "401"
+        }
+    }
+}

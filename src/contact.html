@@ -6,21 +6,19 @@ pageHeaderStripe: 'add'
 pageName: 'contact'
 pageTitle: 'Contact'
 pageTitleMobile: 'Contact'
-pageDescription: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
-pageDescriptionMobile: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
+pageDescription: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen. Dit
+doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
+pageDescriptionMobile: 'Active Collective is gespecialiseerd in het oplossen van problemen of verbeteren van processen.
+Dit doen we door onze mix van specialisten in te zetten. Samen helpen we je graag verder.'
 ---
 
-{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+{%- from "system/component.njk" import component -%}
+<!-- todo: figure out to put this in _base layout-->
 
 
 <h2 class="u-text-invisible">Contactinformatie</h2>
 <div class="contact-wrapper">
   <section class="contact-wrapper__info c-lists">
-
-    
-
-   
-    
     {% for info in ['address', 'telephone', 'email', 'jobs', 'legal'] %}
     {% set listItem = pages[pageName].info[info] %}
     <article class="c-listItem">
@@ -35,15 +33,20 @@ pageDescriptionMobile: 'Active Collective is gespecialiseerd in het oplossen van
 
     <article class="c-listItem">
       <h3 class="listItem__heading">Socials</h3>
- 
+
       {{ component('molecules', '_socialIcons', {
         socials: ['instagram', 'facebook', 'linkedin']
       }) }}
-  
-  </article>
+
+    </article>
 
 
   </section>
-  <img class="contact-wrapper__img" src="/assets/img/{{images.team.jesper.src}}.jpg"
-    alt="{{images.team.jesper.alt}}" width="{{images.team.jesper.width}}">
+    {{ component('atoms', '_pageContentImage', {
+      src: pages[pageName].images.contentImage.src,
+      alt: pages[pageName].images.contentImage.alt,
+      width: pages[pageName].images.contentImage.width,
+      height: pages[pageName].images.contentImage.height,
+      class: "contact-wrapper__img"
+    }) }}
 </div>
