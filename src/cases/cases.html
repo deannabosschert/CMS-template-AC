@@ -16,10 +16,12 @@ pageDescriptionMobile: 'Samen werken aan een betere, slimmere toekomst door midd
   <h2 class="u-text-invisible">Cases</h2>
   <div class="c-cases-wrapper cases-wrapper">
     {% for case in showCases %}
-    
     {{ component('molecules', '_caseCard', {
-      case: pages[pageName].content[case]
-    }) }}
+      title: pages.cases.content[case].title,
+      tag: pages.cases.content[case].tag,
+      link: pages.cases.content[case].link,
+      img: pages.cases.content[case].img
+      }) }}
     
     {% endfor %}
   </div>

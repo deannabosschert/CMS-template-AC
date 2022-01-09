@@ -17,6 +17,8 @@ development en cybersecurity. Waardepropositie, klantreis, touchpoints, moment v
 die een overtuigend geheel vormen.'
 logoColor: 'white'
 ---
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
 <header class="c-hero-header">
   <section class="hero-header__content">
     <header class="hero-header__content__header">
@@ -53,7 +55,12 @@ logoColor: 'white'
     <h2>Cases</h2>
     <div class="c-cases-wrapper">
       {% for case in showCases %}
-      {% include "molecules/_caseCard.html" %}
+      {{ component('molecules', '_caseCard', {
+        title: pages.cases.content[case].title,
+        tag: pages.cases.content[case].tag,
+        link: pages.cases.content[case].link,
+        img: pages.cases.content[case].img
+        }) }}
       {% endfor %}
     </div>
   </section>

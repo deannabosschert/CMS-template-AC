@@ -1,6 +1,11 @@
 <section class="c-other-cases">
   <h2 class="other-cases__heading">Bekijk ook onze andere cases</h2>
   {% for case in otherCases %}
-  {% include "molecules/_caseCard.html" %}
+  {{ component('molecules', '_caseCard', {
+    title: pages.cases.content[case].title,
+    tag: pages.cases.content[case].tag,
+    link: pages.cases.content[case].link,
+    img: pages.cases.content[case].img
+    }) }}
   {% endfor %}
 </section>

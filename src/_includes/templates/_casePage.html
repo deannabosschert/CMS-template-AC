@@ -2,6 +2,8 @@
 layout: templates/_detailPage.html
 pageType: 'casePage'
 ---
+{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+
 <div class="blackBackground-wrapper">
   <div class="content">
     {{ content | safe }}
