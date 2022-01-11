@@ -150,22 +150,25 @@ collections:
         fields:
           - label: Cases list"
             name: "list"
-            widget: "list"
+            widget: "object"
             create: true
             collapsed: false
             fields:
-              - {label: Title, name: "title", widget: string}
-              - {label: Tag, name: "tag", widget: string}
-              - {label: link, name: "link", widget: string}
-              - label: "Image"
-                name: "img"
-                widget: "object"
+              - label: "Case"
+                name: projectPicture
                 fields:
-                  - {label: Path, name: "path", widget: string}
-                  - {label: Source, name: "src", widget: img}
-                  - {label: Alt-text, name: "alt", widget: string}
-                  - {label: Width, name: "width", widget: number}
-                  - {label: Height, name: "height", widget: number}
+                  - {label: Title, name: "title", widget: string}
+                  - {label: Tag, name: "tag", widget: string}
+                  - {label: link, name: "link", widget: string}
+                  - label: "Image"
+                    name: "img"
+                    widget: "object"
+                    fields:
+                      - {label: Path, name: "path", widget: string}
+                      - {label: Source, name: "src", widget: img}
+                      - {label: Alt-text, name: "alt", widget: string}
+                      - {label: Width, name: "width", widget: number}
+                      - {label: Height, name: "height", widget: number}
 
 
 

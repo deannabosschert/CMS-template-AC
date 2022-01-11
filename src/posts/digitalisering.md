@@ -23,8 +23,6 @@ Thema’s als verzuim, beleid en instroom van nieuwe medewerkers zijn de grote p
 
 Door de meest tijdrovende taken te automatiseren kunnen HR-medewerkers zich focussen op hun essentiële functie: het humane. Er is bijvoorbeeld meer tijd voor de werking van de organisatie verbeteren, support bieden aan het management, zorgen voor talentontwikkeling en de inzetbaarheid van het personeel.
 
-{% include "atoms/_pageContentImage.html" %}
-
 Een succesvolle employee journey
 --------------------------------
 
